@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link media="all" rel="stylesheet" href="{{ path '/css/style.css' }}">
+    <script src="{{ path '/js/app.js' }}"></script>
+    <title>Preview Layout</title>
+  </head>
+
+  <body>
+    <div id="windowSizeView_area">
+      <div id="windowSizeView">size...</div>
+    </div>
+    <div id="toggleMode_area">
+      <div id="toggleMode">Dark</div>
+    </div>
+    <div id="previewArea">
+      {{{ yield }}}
+    </div>
+
+  </body>
+</html>

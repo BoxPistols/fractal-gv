@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap')
+
+
+/** reset **/
+*, ::after, ::before
+  margin: 0
+  box-sizing: border-box
+
+html
+    font-size: 62.5%
+
+body
+    font-size: 10px
+    line-height: 1.5
+    font-family: 'Noto Sans JP', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    -ms-text-size-adjust: 100%
+    -webkit-text-size-adjust: 100%
+    text-justify: inter-ideograph
+    zoom: 1
+
+/** Link **/
+a
+  text-decoration: none
+  color: $black
+
+/** image **/
+img
+  width: 100%
+  // width: auto
+
+/** Global Wrapping Style  **/
+#previewArea
+  min-height: 100vh
+  font-size: 1.6rem
+  color: $white
+  background-color: $black
+  // animation: fade-rev .2s
+  &.onColorLight
+    background-color: $white
+    color: $black
+    animation: fade .9s
+
+@keyframes fade
+  0%
+    background-color: $black
+  100%
+    background-color: $white
+
+
+.wrap
+  padding: 3.2rem 0 1.6rem
+  font-size: 1.6rem
+  &.full
+    padding: 0
+
+// section
+.section
+  max-width: 960px
+  padding: 20px 24px 0
+  &.full
+    max-width: 100%

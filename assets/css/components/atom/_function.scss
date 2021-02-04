@@ -1,0 +1,8 @@
+// px to Rem
+$base-fz: 10;
+@function fz($target, $context: $base-fz) {
+  @return ($target / $context) * 1rem;
+}
+@mixin fz($val) {
+  font-size: fz($val);
+}

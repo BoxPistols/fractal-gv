@@ -1,0 +1,134 @@
+
+.Navigation-search
+  padding-left: 1rem
+  padding-right: 1rem
+
+.Search
+  position: relative
+
+.Search-clearButton
+  width: 2rem
+  height: 100%
+  position: absolute
+  top: 0
+  right: 0
+  line-height: 0
+  opacity: 0.5
+
+  &:focus, &:hover
+    opacity: 1
+
+  svg
+    width: 18px
+    height: 18px
+
+.Search-label
+  display: block
+  margin-bottom: 0.5rem
+  color: rgba(83, 83, 99, 0.75)
+  font-size: 0.75rem
+  line-height: 1.66667
+  letter-spacing: 0.075em
+  text-transform: capitalize
+  overflow: hidden
+  position: absolute
+  height: 1px
+  width: 1px
+  margin: -1px
+  padding: 0
+  clip: rect(0 0 0 0)
+
+.Search-input
+  width: 100%
+  padding: 0.3125rem 2rem 0.3125rem calc(.5625rem * 2)
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  border-radius: 24px
+  border: 1px solid rgba(83, 243, 99, 0.85)
+  background: #111
+  color: lime
+
+  &:focus
+    outline: none
+
+  &::-ms-clear
+    display: none
+
+.Status, .Status-dots
+  display: flex
+  align-items: center
+  opacity: 0.9
+
+.Status-dot
+  width: 0.2rem
+  height: 0.2rem
+  background-color: #fff
+  border: 1px solid transparent
+  border-radius: 100%
+
+  + .Status-dot
+    -webkit-margin-start: 3px
+    margin-inline-start: 3px
+
+[dir=ltr] .Status-dot + .Status-dot
+  margin-left: 3px
+
+[dir=rtl] .Statu9dot + .Status-dot
+  margin-right: 3px
+
+.Status-label
+  font-family: 'Nanum Gothic Coding', monospace
+  font-family: 'Nova Mono', monospace
+  font-size: 0.85rem
+  line-height: 1.66667
+  letter-spacing: 0.1em
+  text-transform: capitalize
+  display: inline-block
+  border-radius: 2rem
+  padding: 0.125rem 0.75rem
+  color: #fff
+  white-space: nowrap
+
+  + .Status-label
+    -webkit-margin-start: 0.25rem
+    margin-inline-start: 0.25rem
+
+[dir=ltr] .Status-label + .Status-label
+  margin-left: 0.5rem
+
+[dir=rtl] .Status-label + .Status-label
+  margin-right: 0.5rem
+
+.Status--labelled .Status-label
+  -webkit-margin-end: 0.75rem
+  margin-inline-end: 0.75rem
+
+[dir=ltr] .Status--labelled .Status-label
+  margin-right: 0.75rem
+
+[dir=rtl] .Status--labelled .Status-label
+  margin-left: 0.75rem
+
+// Nav layput
+
+.Frame-panel--sidebar
+  -webkit-border-end: 1px solid rgba(83, 83, 99, 0.25)
+  border-inline-end: 1px solid rgba(83, 83, 99, 0.25)
+  flex: 0 0 auto
+  width: auto
+  min-width: 120px
+  max-width: 480px
+  background-color: #234
+  background: linear-gradient(145deg, #1f3c48, #28363c)
+  padding: 1rem 0
+
+// [dir=ltr] .Frame-panel--sidebar
+  // border-right: 1px solid rgba(83, 83, 99, 0)
+//
+// [dir=rtl] .Frame-panel--sidebar
+  // border-left: 1px solid rgba(83, 83, 99, 0.25)
+
+@media (max-width: 31.24em)
+  .Frame-panel--sidebar
+    max-width: 240px

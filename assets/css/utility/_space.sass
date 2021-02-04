@@ -1,0 +1,51 @@
+.m-auto
+  margin: auto
+
+// Start 8px End 20px Multiple 2px
+$startPx: 0
+// $startMinPx: 4
+$endPx: 48
+// $endMinPx: 44
+$multiplePx: 4
+
+@for $i from $startPx through (($endPx - $startPx) / $multiplePx)
+  // margin
+  .m-#{$startPx + $i * $multiplePx}
+    margin: #{$startPx + $i * $multiplePx}px
+  .mt-#{$startPx + $i * $multiplePx}
+    margin-top: #{$startPx + $i * $multiplePx}px
+  .ml-#{$startPx + $i * $multiplePx}
+    margin-left: #{$startPx + $i * $multiplePx}px
+  .mr-#{$startPx + $i * $multiplePx}
+    margin-right: #{$startPx + $i * $multiplePx}px
+  .mb-#{$startPx + $i * $multiplePx}
+    margin-bottom: #{$startPx + $i * $multiplePx}px
+
+  // padding
+  .p-#{$startPx + $i * $multiplePx}
+    padding: #{$startPx + $i * $multiplePx}px
+  .pt-#{$startPx + $i * $multiplePx}
+    padding-top: #{$startPx + $i * $multiplePx}px
+  .pl-#{$startPx + $i * $multiplePx}
+    padding-left: #{$startPx + $i * $multiplePx}px
+  .pr-#{$startPx + $i * $multiplePx}
+    padding-right: #{$startPx + $i * $multiplePx}px
+  .pb-#{$startPx + $i * $multiplePx}
+    padding-bottom: #{$startPx + $i * $multiplePx}px
+
+// 　horizontal / vertical
+@for $i from $startPx through (($endPx - $startPx) / $multiplePx)
+  // margin
+  .mx-#{$startPx + $i * $multiplePx}
+    margin-left: #{$startPx + $i * $multiplePx}px
+    margin-right: #{$startPx + $i * $multiplePx}px
+  .my-#{$startPx + $i * $multiplePx}
+    margin-top: #{$startPx + $i * $multiplePx}px
+    margin-bottom: #{$startPx + $i * $multiplePx}px
+  // pading
+  .px-#{$startPx + $i * $multiplePx}
+    padding-left: #{$startPx + $i * $multiplePx}px
+    padding-right: #{$startPx + $i * $multiplePx}px
+  .py-#{$startPx + $i * $multiplePx}
+    padding-top: #{$startPx + $i * $multiplePx}px
+    padding-bottom: #{$startPx + $i * $multiplePx}px

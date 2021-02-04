@@ -1,0 +1,77 @@
+{
+  "title": "typography",
+  "context": {
+    "_previewHeader": "block",
+    "_previewFontSize": "none",
+    "_previewRwFontSize": "none",
+    "font": ""
+  },
+  "variants": [
+    {
+      "name": "head_1",
+      "context": {
+        "className": "1"
+      }
+    },
+    {
+      "name": "head_2",
+      "context": {
+        "className": "2"
+      }
+    },
+    {
+      "name": "head_3",
+      "context": {
+        "className": "3"
+      }
+    },
+    {
+      "name": "head_4",
+      "context": {
+        "className": "4"
+      }
+    },
+    {
+      "name": "head_5",
+      "context": {
+        "className": "5"
+      }
+    },
+    {
+      "name": "Font-Size-mix",
+      "context": {
+        "_previewHeader": "none",
+        "_previewFontSize": "block",
+        "_previewRwFontSize": "none",
+        "sizes": [
+          { "class": "fz12" },
+          { "class": "fz16" },
+          { "class": "fz20" },
+          { "class": "fz24" },
+          { "class": "fz28" },
+          { "class": "fz32" },
+          { "class": "fz36" },
+          { "class": "fz40" }
+        ]
+      }
+    },
+    {
+      "name": "Rwd-Tex-mix",
+      "context": {
+        "_previewHeader": "none",
+        "_previewFontSize": "none",
+        "_previewRwFontSize": "block",
+        "sizes": [
+          { "class": "tx-s", "to": 12, "end": 14 },
+          { "class": "tx-sm", "to": 14, "end": 16 },
+          { "class": "tx-m", "to": 16, "end": 18 },
+          { "class": "tx-lm", "to": 18, "end": 22 },
+          { "class": "tx-sl", "to": 18, "end": 22 },
+          { "class": "tx-ml", "to": 20, "end": 24 },
+          { "class": "tx-l", "to": 24, "end": 28 },
+          { "class": "tx-x", "to": 28, "end": 32 }
+        ]
+      }
+    }
+  ]
+}

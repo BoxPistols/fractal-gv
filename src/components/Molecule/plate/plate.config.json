@@ -1,0 +1,59 @@
+{
+  "title": "Plate",
+  "context": {
+    "class": "plate",
+    "variation": "",
+    "head": "3",
+    "display": "d-none",
+    "button": "送信する"
+  },
+  "variants":
+  [
+    {
+      "name": "plain",
+      "context": {
+        "variation": "plain",
+        "heading" : "d-none"
+      }
+    },
+    {
+      "name": "h2",
+      "context": {
+        "head": "2"
+      }
+    },
+    {
+      "name": "h3",
+      "context": {
+        "head": "3"
+      }
+    },
+    {
+      "name": "h4",
+      "context": {
+        "head": "4"
+      }
+    },
+    {
+      "name": "has-button",
+      "context": {
+        "head": "3",
+        "display": "d-block"
+      }
+    },
+    {
+      "name": "has-button-right",
+      "context": {
+        "head": "3",
+        "display": "fx fx-jc-e"
+      }
+    },
+    {
+      "name": "has-border",
+      "context": {
+        "head": "3",
+        "variation": "border p-12"
+      }
+    }
+  ]
+}

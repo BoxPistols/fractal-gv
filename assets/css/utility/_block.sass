@@ -1,0 +1,62 @@
+/* -------- Block or None -------- */
+
+/** mixin  **/
+@mixin d-block
+  display: block
+@mixin d-none
+  display: none
+@mixin v-hidden
+  visibility: hidden
+
+/** include **/
+.d-block
+  @include d-block
+.d-none
+  @include d-none
+.v-hidden
+  @include v-hidden
+
+
+/* -------- flex -------- */
+
+/** mixin **/
+@mixin fx
+  display: flex
+// block to vertical
+@mixin fx-col
+  flex-direction: column
+
+// to center
+@mixin fx-jc-c
+  justify-content: center
+@mixin fx-ai-c
+  align-items: center
+@mixin fx-c
+  justify-content: center
+  align-items: center
+
+// to right/bottom
+@mixin fx-jc-e
+  justify-content: flex-end
+@mixin fx-ai-e
+  align-items: flex-end
+
+/** includes **/
+.fx
+  @include fx
+.fx-col
+  @include fx-col
+
+// to center
+.fx-c
+  @include fx-c
+.fx-jc-c
+  @include fx-jc-c
+.fx-ai-c
+  @include fx-ai-c
+
+// to right/bottom
+.fx-jc-e
+  @include fx-jc-e
+.fx-ai-e
+  @include fx-ai-e

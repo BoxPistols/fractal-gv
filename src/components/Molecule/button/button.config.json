@@ -1,0 +1,59 @@
+{
+  "title": "button",
+  "name": "button",
+  "context": {
+    "text": "送信する",
+    "className": "btn"
+  },
+  "variants": [
+    {
+      "name": "min",
+      "context": {
+        "text": "送信",
+        "className": "min"
+      }
+    },
+    {
+      "name": "normal",
+      "context": {
+        "text": "送信する",
+        "className": "normal"
+      }
+    },
+    {
+      "name": "large",
+      "context": {
+        "text": "送信する",
+        "className": "large"
+      }
+    },
+    {
+      "name": "full",
+      "context": {
+        "text": "送信する",
+        "className": "full"
+      }
+    },
+    {
+      "name": "success",
+      "context": {
+        "text": "success",
+        "className": "normal success"
+      }
+    },
+    {
+      "name": "warning",
+      "context": {
+        "text": "warning",
+        "className": "normal warning"
+      }
+    },
+    {
+      "name": "danger",
+      "context": {
+        "text": "danger",
+        "className": "normal danger"
+      }
+    }
+  ]
+}

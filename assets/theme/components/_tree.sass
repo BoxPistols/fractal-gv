@@ -1,0 +1,396 @@
+/** Tree UI **/
+@mixin treeAction
+  border: 1px solid transparent
+  border-radius: 24px
+  transition: .3s
+  &:hover
+    background-color: #c5a8beb2
+    border: 1px solid pink
+
+.Tree
+  white-space: nowrap
+
+.Tree-header
+  display: flex
+  align-items: center
+  margin-bottom: 0.25rem
+  padding: .5rem 1rem
+  background-color: rgba(0,0,0,.2)
+
+.Tree-title
+  font-family: 'Nova Mono', monospace
+  font-size: 1.1rem
+  line-height: 1.5
+  letter-spacing: 0.05em
+  text-transform: capitalize
+  flex: 1 1 auto
+  color: ghostwhite
+
+.Tree-collapse
+  flex-shrink: 0
+  margin-left: 0.5rem
+  line-height: 0
+  padding: 0
+  color: rgba(83, 83, 99, 0.75)
+  opacity: 0.85
+  transition: .3s
+
+  &:focus, &:hover
+    opacity: 1
+
+  svg
+    width: 16px
+    height: 16px
+
+.Tree-collection.is-closed
+  background-color: transparent
+
+  .Tree-collectionItems
+    display: none
+
+[dir=ltr] .Tree-collection.is-closed .Tree-collectionLabel::before
+  background-image: url(img/icon-navigation-closed-ltr.svg)
+  content: ""
+  position: absolute
+  top: .6em
+  // transform: scale(0.8, 1.2)
+
+[dir=rtl] .Tree-collection.is-closed .Tree-collectionLabel::before
+  background-image: url(img/icon-navigation-closed-rtl.svg)
+  content: ""
+  position: absolute
+  top: 0.9em
+  // transform: scale(0.8, 1.2)
+
+.Tree-collectionLabel
+  letter-spacing: 0.08rem
+  font-size: .95rem
+  line-height: 1.2
+  display: block
+  position: relative
+  width: 88%
+  padding-top: 0.375rem
+  padding-bottom: 0.375rem
+  margin-left: 0.75rem
+  touch-action: manipulation
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  color: yellow
+
+[dir=ltr] .Tree-collectionLabel
+  text-align: left
+
+[dir=rtl] .Tree-collectionLabel
+  text-align: right
+
+.Tree-collectionLabel
+  @include treeAction
+  // &:hover
+  //   background-color: rgba(83, 83, 99, 0.05)
+
+  &:focus
+    outline: none
+
+  &::before
+    display: inline-block
+    position: absolute
+    content: ""
+    top: 0.6rem
+    width: 0.75rem
+    height: 0.75rem
+    background-image: url(img/icon-navigation-opened.svg)
+    background-size: 0.65rem
+    background-repeat: no-repeat
+    background-position: 50%
+    opacity: 0.75
+    // color: pink
+    // content: ">"
+    // top: 0.35em
+    // transform: scale(0.9, 0.7) rotate(90deg)
+
+.Tree-item
+  padding-left: .25rem
+  font-size: 0.9rem
+  line-height: 1.2
+  max-width: 96%
+
+
+.Tree-entityLink
+  letter-spacing: 0.04rem
+  display: flex
+  align-items: center
+  padding-top: 0.275rem
+  padding-bottom: 0.275rem
+  text-decoration: none
+
+  &:hover
+    background-color: rgba(83, 83, 99, 0.05)
+
+.is-current .Tree-entityLink
+  background-color: rgba(83, 83, 99, 0.075)
+
+.Tree-entityLink .Status
+  -webkit-margin-start: 0.25rem
+  margin-inline-start: 0.25rem
+
+[dir=ltr] .Tree-entityLink .Status
+  margin-left: 0.5rem
+  margin-top: -0.25rem
+
+[dir=rtl] .Tree-entityLink .Status
+  margin-right: 0.5rem
+  margin-top: -0.25rem
+
+.Tree-depth-1 .Tree-collectionLabel
+  -webkit-padding-start: 0
+  padding-inline-start: 0
+
+[dir=ltr] .Tree-depth-1 .Tree-collectionLabel
+  padding-left: 0
+
+[dir=rtl] .Tree-depth-1 .Tree-collectionLabel
+  padding-right: 0
+
+.Tree-depth-1 .Tree-collectionLabel::before
+  offset-inline-start: -0.85rem
+
+[dir=ltr] .Tree-depth-1 .Tree-collectionLabel::before
+  left: -0.85rem
+
+[dir=rtl] .Tree-depth-1 .Tree-collectionLabel::before
+  right: -0.85rem
+
+.Tree-depth-1 .Tree-entityLink
+  -webkit-padding-start: 1rem
+  padding-inline-start: 1rem
+
+[dir=ltr] .Tree-depth-1 .Tree-entityLink
+  padding-left: 1rem
+
+[dir=rtl] .Tree-depth-1 .Tree-entityLink
+  padding-right: 1rem
+
+.Tree-depth-2 .Tree-collectionLabel
+  -webkit-padding-start: 1rem
+  padding-inline-start: 1rem
+
+[dir=ltr] .Tree-depth-2 .Tree-collectionLabel
+  padding-left: 1rem
+
+[dir=rtl] .Tree-depth-2 .Tree-collectionLabel
+  padding-right: 1rem
+
+.Tree-depth-2 .Tree-collectionLabel::before
+  offset-inline-start: 0.25rem
+
+[dir=ltr] .Tree-depth-2 .Tree-collectionLabel::before
+  left: 0.25rem
+
+[dir=rtl] .Tree-depth-2 .Tree-collectionLabel::before
+  right: 0.25rem
+
+.Tree-depth-2 .Tree-entityLink
+  -webkit-padding-start: 2rem
+  padding-inline-start: 2rem
+
+[dir=ltr] .Tree-depth-2 .Tree-entityLink
+  padding-left: 2rem
+
+[dir=rtl] .Tree-depth-2 .Tree-entityLink
+  padding-right: 2rem
+
+.Tree-depth-3 .Tree-collectionLabel
+  -webkit-padding-start: 2rem
+  padding-inline-start: 2rem
+  &:hover
+    background-color: #292d3183
+
+[dir=ltr] .Tree-depth-3 .Tree-collectionLabel
+  padding-left: 2rem
+
+[dir=rtl] .Tree-depth-3 .Tree-collectionLabel
+  padding-right: 2rem
+
+.Tree-depth-3 .Tree-collectionLabel::before
+  offset-inline-start: 1.25rem
+
+[dir=ltr] .Tree-depth-3 .Tree-collectionLabel::before
+  left: 1.25rem
+
+[dir=rtl] .Tree-depth-3 .Tree-collectionLabel::before
+  right: 1.25rem
+
+.Tree-depth-3 .Tree-entityLink
+  -webkit-padding-start: 3rem
+  padding-inline-start: 3rem
+
+  border: 1px solid transparent
+  border-radius: 24px
+  transition: .3s
+  &:hover
+    background-color: #867a8365
+    border: 1px solid pink
+
+[dir=ltr] .Tree-depth-3 .Tree-entityLink
+  padding-left: 3rem
+
+[dir=rtl] .Tree-depth-3 .Tree-entityLink
+  padding-right: 3rem
+
+.Tree-depth-4 .Tree-collectionLabel
+  -webkit-padding-start: 3rem
+  padding-inline-start: 3rem
+
+[dir=ltr] .Tree-depth-4 .Tree-collectionLabel
+  padding-left: 3rem
+
+[dir=rtl] .Tree-depth-4 .Tree-collectionLabel
+  padding-right: 3rem
+
+.Tree-depth-4 .Tree-collectionLabel::before
+  offset-inline-start: 2.25rem
+
+[dir=ltr] .Tree-depth-4 .Tree-collectionLabel::before
+  left: 2.25rem
+
+[dir=rtl] .Tree-depth-4 .Tree-collectionLabel::before
+  right: 2.25rem
+
+.Tree-depth-4 .Tree-entityLink
+  -webkit-padding-start: 4rem
+  padding-inline-start: 4rem
+
+[dir=ltr] .Tree-depth-4 .Tree-entityLink
+  padding-left: 4rem
+
+[dir=rtl] .Tree-depth-4 .Tree-entityLink
+  padding-right: 4rem
+
+.Tree-depth-5 .Tree-collectionLabel
+  -webkit-padding-start: 4rem
+  padding-inline-start: 4rem
+
+[dir=ltr] .Tree-depth-5 .Tree-collectionLabel
+  padding-left: 4rem
+
+[dir=rtl] .Tree-depth-5 .Tree-collectionLabel
+  padding-right: 4rem
+
+.Tree-depth-5 .Tree-collectionLabel::before
+  offset-inline-start: 3.25rem
+
+[dir=ltr] .Tree-depth-5 .Tree-collectionLabel::before
+  left: 3.25rem
+
+[dir=rtl] .Tree-depth-5 .Tree-collectionLabel::before
+  right: 3.25rem
+
+.Tree-depth-5 .Tree-entityLink
+  -webkit-padding-start: 5rem
+  padding-inline-start: 5rem
+
+[dir=ltr] .Tree-depth-5 .Tree-entityLink
+  padding-left: 5rem
+
+[dir=rtl] .Tree-depth-5 .Tree-entityLink
+  padding-right: 5rem
+
+.Tree-depth-6 .Tree-collectionLabel
+  -webkit-padding-start: 5rem
+  padding-inline-start: 5rem
+
+[dir=ltr] .Tree-depth-6 .Tree-collectionLabel
+  padding-left: 5rem
+
+[dir=rtl] .Tree-depth-6 .Tree-collectionLabel
+  padding-right: 5rem
+
+.Tree-depth-6 .Tree-collectionLabel::before
+  offset-inline-start: 4.25rem
+
+[dir=ltr] .Tree-depth-6 .Tree-collectionLabel::before
+  left: 4.25rem
+
+[dir=rtl] .Tree-depth-6 .Tree-collectionLabel::before
+  right: 4.25rem
+
+.Tree-depth-6 .Tree-entityLink
+  -webkit-padding-start: 6rem
+  padding-inline-start: 6rem
+
+[dir=ltr] .Tree-depth-6 .Tree-entityLink
+  padding-left: 6rem
+
+[dir=rtl] .Tree-depth-6 .Tree-entityLink
+  padding-right: 6rem
+
+.Tree-depth-7 .Tree-collectionLabel
+  -webkit-padding-start: 6rem
+  padding-inline-start: 6rem
+
+[dir=ltr] .Tree-depth-7 .Tree-collectionLabel
+  padding-left: 6rem
+
+[dir=rtl] .Tree-depth-7 .Tree-collectionLabel
+  padding-right: 6rem
+
+.Tree-depth-7 .Tree-collectionLabel::before
+  offset-inline-start: 5.25rem
+
+[dir=ltr] .Tree-depth-7 .Tree-collectionLabel::before
+  left: 5.25rem
+
+[dir=rtl] .Tree-depth-7 .Tree-collectionLabel::before
+  right: 5.25rem
+
+.Tree-depth-7 .Tree-entityLink
+  -webkit-padding-start: 7rem
+  padding-inline-start: 7rem
+
+[dir=ltr] .Tree-depth-7 .Tree-entityLink
+  padding-left: 7rem
+
+[dir=rtl] .Tree-depth-7 .Tree-entityLink
+  padding-right: 7rem
+
+.Tree-depth-8 .Tree-collectionLabel
+  -webkit-padding-start: 7rem
+  padding-inline-start: 7rem
+
+[dir=ltr] .Tree-depth-8 .Tree-collectionLabel
+  padding-left: 7rem
+
+[dir=rtl] .Tree-depth-8 .Tree-collectionLabel
+  padding-right: 7rem
+
+.Tree-depth-8 .Tree-collectionLabel::before
+  offset-inline-start: 6.25rem
+
+[dir=ltr] .Tree-depth-8 .Tree-collectionLabel::before
+  left: 6.25rem
+
+[dir=rtl] .Tree-depth-8 .Tree-collectionLabel::before
+  right: 6.25rem
+
+.Tree-depth-8 .Tree-entityLink
+  -webkit-padding-start: 8rem
+  padding-inline-start: 8rem
+
+[dir=ltr] .Tree-depth-8 .Tree-entityLink
+  padding-left: 8rem
+
+[dir=rtl] .Tree-depth-8 .Tree-entityLink
+  padding-right: 8rem
+
+.Tree-depth-1, .Tree-depth-2, .Tree-depth-3, .Tree-depth-4
+  padding-left: .25rem
+
+.Tree-aside
+  font-size: 0.875rem
+  line-height: 1.71429
+  margin: 0 1rem 0
+  padding-top: 0.375rem
+  opacity: 0.9
+  color: gray

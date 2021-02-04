@@ -1,0 +1,467 @@
+@import ../../assets/css/utility/block
+@import ./components/00-mixin
+
+.FileBrowser
+  position: static
+  flex-basis: 100%
+
+.FileBrowser-selectWrapper
+  margin: (-0.75rem) -0.75rem 0.75rem -0.75rem
+  padding: 0.5rem 0.75rem
+  background-color: rgba(83, 83, 99, 0.05)
+
+  .select2-container
+    font-size: 0.875rem
+    line-height: 1.71429
+    -webkit-margin-start: -0.25rem
+    margin-inline-start: -0.25rem
+    margin-bottom: -1px
+    min-width: 15em
+
+[dir=ltr] .FileBrowser-selectWrapper .select2-container
+  margin-left: -0.25rem
+
+[dir=rtl] .FileBrowser-selectWrapper .select2-container
+  margin-right: -0.25rem
+
+.FileBrowser-selectWrapper select
+  &:active, &:focus
+    outline: 0
+
+.FileBrowser-select-label
+  font-size: 0.75rem
+  line-height: 1.66667
+  letter-spacing: 0.075em
+  text-transform: capitalize
+  display: block
+  width: auto
+  padding: 0.25rem 0
+  font-weight: 500
+
+.select2-selection.select2-selection--single
+  border-color: rgba(83, 83, 99, 0.25)
+
+.select2-container--focus .select2-selection.select2-selection--single
+  outline: 0
+  border-color: lime
+
+.select2-results__option
+  font-size: 0.875rem
+  line-height: 1.71429
+  min-width: 15em
+  color: gray !important
+
+  &[aria-selected=true]
+    background-color: rgba(83, 83, 99, 0.1) !important
+    color: #111 !important
+
+.select2-results__option--highlighted[aria-selected]
+  color: white !important
+  background-color: #111 !important
+
+.FileBrowser-item
+  display: none
+
+  &.is-active
+    display: block
+
+@media (min-width: 37.5em)
+  .Frame.is-closed .FileBrowser-select-label
+    position: relative
+    width: 10rem
+    display: inline-block
+
+@media (min-width: 50em)
+  .Frame:not(.is-closed) .FileBrowser-select-label
+    position: relative
+    width: 10rem
+    display: inline-block
+
+.Frame
+  display: -webkit-box
+  display: flex
+  -webkit-box-orient: vertical
+  -webkit-box-direction: normal
+  flex-direction: column
+  -webkit-box-flex: 1
+  flex-grow: 1
+  position: relative
+  height: 100%
+  width: 100%
+  min-width: 280px
+  overflow: hidden
+
+  &.is-resizing
+    cursor: -webkit-grabbing
+    cursor: grabbing
+
+    .Frame-body, .Frame-panel
+      -webkit-user-select: none
+      -moz-user-select: none
+      -ms-user-select: none
+      user-select: none
+      pointer-events: none
+
+.Frame--full > .Error
+  margin: 20px
+
+.Frame-header
+  flex-shrink: 0
+
+.Frame-body
+  display: -webkit-box
+  display: flex
+  -webkit-box-orient: horizontal
+  -webkit-box-direction: reverse
+  flex-direction: row-reverse
+  -webkit-box-flex: 1
+  flex-grow: 1
+  height: calc(100% - 3rem)
+
+@media (max-width: 31.24em)
+  .Frame-body
+    -webkit-margin-end: 240px
+    margin-inline-end: 240px
+    -webkit-transform: translate3d(-240px, 0, 0)
+    transform: translate3d(-240px, 0, 0)
+    -webkit-transition: none
+    transition: none
+
+  [dir=ltr] .Frame-body
+    margin-right: 240px
+
+  [dir=rtl] .Frame-body
+    margin-left: 240px
+
+.Frame-inner
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  position: absolute
+  height: 100%
+  min-width: 280px
+  overflow: auto
+
+.Frame-panel
+  position: relative
+  overflow: auto
+  padding: 0
+  -webkit-overflow-scrolling: touch
+
+.Frame-panel--main
+  -webkit-box-flex: 1
+  flex: 1 1 auto
+  position: relative
+  z-index: 1
+  overflow: auto
+
+  &.is-loading
+    background-image: url(img/loader.svg)
+    background-repeat: no-repeat
+    background-position: 50%
+
+    .Frame-inner
+      display: none
+
+.Frame-handle
+  margin-inline-end: -0.25rem
+  flex: 0 0 auto
+  position: relative
+  z-index: 2
+  height: 100%
+  width: 0.25rem
+  background: transparent url(img/icon-drag--vertical.svg) no-repeat 50% 45%
+  background-color: gray
+  background-size: 3px 16px
+  cursor: ew-resize
+  transition: background-color .3s
+
+  &:hover
+    //background-color: rgba(83, 83, 99, 0.05)
+    background: deeppink
+
+  &:active
+    //background-color: rgba(83, 83, 99, 0.075)
+    background: deeppink
+
+  &.is-disabled
+    pointer-events: none
+    visibility: hidden
+
+@media (max-width: 31.24em)
+  .Frame-handle
+    pointer-events: none
+    visibility: hidden
+
+[dir=ltr] .Frame-handle
+  margin-right: -0.25rem
+
+[dir=rtl] .Frame-handle
+  margin-left: -0.25rem
+
+.Frame
+  .Header-navToggleIcon--open
+    display: block
+
+  &.is-closed
+    .Header-navToggleIcon--open
+      display: none
+
+    .Header-navToggleIcon--closed
+      display: block
+
+.Meta a
+  text-decoration: none
+
+.Meta-item
+  overflow: hidden
+  margin-bottom: 0.5rem
+  padding-bottom: 1rem
+
+  &:not(:last-child)
+    border-bottom: 1px solid rgba(83, 83, 99, 0.15)
+
+.Meta-key
+  font-size: 0.75rem
+  line-height: 1.66667
+  letter-spacing: 0.075em
+  text-transform: capitalize
+  display: block
+  padding-right: 0.5rem
+  padding-bottom: 0.25rem
+  color: rgba(83, 83, 99, 0.75)
+
+.Meta-value
+  font-size: 0.875rem
+  line-height: 1.71429
+  display: block
+  min-width: 10rem
+  padding-bottom: 0.25rem
+
+  a
+    display: -webkit-inline-box
+    display: inline-flex
+    -webkit-box-align: center
+    align-items: center
+
+    svg
+      width: 1rem
+      height: 1rem
+      margin-left: 5px
+
+    &:hover span
+      text-decoration: underline
+
+  li:not(:last-child)
+    margin-bottom: 0.25em
+
+.Meta-count
+  font-style: normal
+  font-weight: 400
+  opacity: 0.75
+
+@media (min-width: 37.5em)
+  .Frame.is-closed .Meta-item
+    -webkit-padding-start: 10rem
+    padding-inline-start: 10rem
+
+  [dir=ltr] .Frame.is-closed .Meta-item
+    padding-left: 10rem
+
+  [dir=rtl] .Frame.is-closed .Meta-item
+    padding-right: 10rem
+
+  .Frame.is-closed .Meta-key
+    -webkit-margin-start: -10rem
+    margin-inline-start: -10rem
+    width: 10rem
+    float: left
+
+  [dir=ltr] .Frame.is-closed .Meta-key
+    margin-left: -10rem
+
+  [dir=rtl] .Frame.is-closed .Meta-key
+    margin-right: -10rem
+
+@media (min-width: 50em)
+  .Frame:not(.is-closed) .Meta-item
+    -webkit-padding-start: 10rem
+    padding-inline-start: 10rem
+
+  [dir=ltr] .Frame:not(.is-closed) .Meta-item
+    padding-left: 10rem
+
+  [dir=rtl] .Frame:not(.is-closed) .Meta-item
+    padding-right: 10rem
+
+  .Frame:not(.is-closed) .Meta-key
+    -webkit-margin-start: -10rem
+    margin-inline-start: -10rem
+    width: 10rem
+    float: left
+
+  [dir=ltr] .Frame:not(.is-closed) .Meta-key
+    margin-left: -10rem
+
+  [dir=rtl] .Frame:not(.is-closed) .Meta-key
+    margin-right: -10rem
+
+.Navigation
+  display: inline-block
+  width: 100%
+
+.Navigation-group
+  &::after
+    display: table
+    clear: both
+    content: ""
+
+  + .Navigation-group
+    margin-top: .85rem
+
+  // if has information
+  // &:last-child
+  //   position: fixed
+  //   bottom: 4px
+  //   .Tree-header
+  //     display: none
+      // background-color: transparent
+
+.Preview
+  position: relative
+
+  &.is-disabled .Preview-overlay
+    display: block
+
+  &.is-resizing
+    cursor: -webkit-grabbing
+    cursor: grabbing
+
+    *
+      cursor: -webkit-grabbing !important
+      cursor: grabbing !important
+
+@media (min-width: 31.25em)
+  .Preview
+    // background-color: #123
+    background: linear-gradient(145deg, #565657, #274650)
+    border: 1px solid rgba(83, 83, 99, 0.25)
+
+.Preview-wrapper
+  offset-inline-start: 0
+  position: absolute
+  top: 0
+  bottom: 0
+  height: 100%
+  width: 100%
+  width: calc(100% + .625rem)
+  min-width: 200px
+  max-width: calc(100% + .625rem)
+  background-color: transparent
+
+[dir=ltr] .Preview-wrapper
+  left: 0
+
+[dir=rtl] .Preview-wrapper
+  right: 0
+
+.Preview-resizer
+  offset-inline-start: 0
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  max-width: calc(100% - .625rem + 1px)
+  min-width: 180px
+  background-color: #fff
+  -webkit-overflow-scrolling: touch
+
+[dir=ltr] .Preview-resizer
+  left: 0
+
+[dir=rtl] .Preview-resizer
+  right: 0
+
+@media (max-width: 31.24em)
+  .Preview-resizer
+    width: 100% !important
+    min-width: 100%
+    border: 0
+
+.Preview-resizer .Error
+  margin: 0.75rem
+
+.Preview-iframe
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  position: absolute
+  z-index: 0
+  width: 100%
+  height: 100%
+  background-color: #1c1b22
+
+.Preview-overlay
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  display: none
+  position: absolute
+  height: 100%
+  width: 100%
+  opacity: 0
+
+.Preview-handle
+  border-inline-start: 1px solid rgba(83, 83, 99, 0.25)
+  offset-inline-end: 0
+  position: absolute
+  top: 0px
+  bottom: 0px
+  z-index: 100
+  height: 100%
+  width: 0.625rem
+  background: transparent url(img/icon-drag--vertical.svg) no-repeat 50%
+  background-size: 3px 16px
+  cursor: ew-resize
+  transition: 0.3s
+
+[dir=ltr] .Preview-handle
+  border-left: 1px solid rgba(83, 83, 99, 0.25)
+
+[dir=rtl] .Preview-handle
+  border-right: 1px solid rgba(83, 83, 99, 0.5)
+
+.Preview-handle
+  background-color: gray
+  transition: .3s
+  &:hover
+    //background-color: rgba(83, 83, 99, 0.05)
+    background-color: deeppink
+
+  &:active
+    //background-color: rgba(83, 83, 99, 0.075)
+    background-color: deeppink
+
+  &.is-disabled
+    pointer-events: none
+    visibility: hidden
+
+@media (max-width: 31.24em)
+  .Preview-handle
+    pointer-events: none
+    visibility: hidden
+
+[dir=ltr] .Preview-handle
+  right: 0
+
+[dir=rtl] .Preview-handle
+  left: 0
+
+@media (max-width: 31.24em)
+  .Preview-handle
+    display: none

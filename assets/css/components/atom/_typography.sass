@@ -1,0 +1,83 @@
+@import function
+
+.head
+    line-height: 1.5
+    font-weight: 500
+    margin-bottom: .5em
+    &_1
+        +fz(32)
+    &_2
+        +fz(28)
+    &_3
+        +fz(24)
+    &_4
+        +fz(22)
+    &_5
+        +fz(20)
+
+// TODO: All font size to => fx(num) / later 62.5% to 100%
+/** Font-Sizes **/
+// Start 8px End 48px Multiple 4px
+        $startPx: 8
+        $endPx: 48
+        $multiplePx: 4
+@for $i from 0 through (($endPx - $startPx) / $multiplePx)
+    .fz#{$startPx + $i * $multiplePx}
+        font-size: #{($startPx + $i * $multiplePx) / 10}rem
+
+/** Responsi    ve font Size **/
+// TODO: クラス名の決定、メインのフォントサイズ運用により決定させる
+// TODO : 抽象化レスポンシブフォントサイズ
+// TODO : px or rem 設計の選択
+/***
+ *  s:    12-14
+ *  sm: 14-16
+ * m:   14-18
+ * lm: 16-20
+ *   sl: 18-22
+ *  ml: 20-24
+ *    l: 22-26
+ *  l: 24-28
+ *    xl: 26-30
+ *    sx: 28-32
+ *  x: 28-32
+ ***/
+
+/** IE対応： フォールバックの設置 = 最小サイズ rem **/
+
+// +2領域
+.tx-s // 12-14
+    +fz(12) // for IE
+    font-size: clamp(12px, 1.5vw, 14px)
+
+.tx-sm // 14-16
+    +fz(14)
+    font-size: clamp(14px, 1.5vw, 16px)
+
+.tx-m // 16-18
+    +fz(16)
+    font-size: clamp(16px, 1.5vw, 18px)
+
+// +4領域
+.tx-lm // 18-22
+    +fz(18)
+    font-size: clamp(18px, 1.5vw, 22px)
+
+.tx-sl // 22-26
+    +fz(22)
+    font-size: clamp(22px, 1.5vw, 26px)
+
+.tx-ml // 26-30
+  // font-size: min(max(2rem, calc(2rem + ((1vw - 0.4rem) * 0.3846))), 2.4rem)
+  // @include mqMin(xl)
+    font-size: 2.4rem
+
+.tx-l // 24-28
+  // font-size: min(max(2.4rem, calc(2.4rem + ((1vw - 0.4rem) * 0.3846))), 2.8rem)
+  // @include mqMin(xl)
+    font-size: 2.8rem
+
+.tx-x // 28-32
+  // font-size: min(max(2.8rem, calc(2.8rem + ((1vw - 0.4rem) * 0.3846))), 3.2rem)
+  // @include mqMin(xl)
+    font-size: 3.2rem

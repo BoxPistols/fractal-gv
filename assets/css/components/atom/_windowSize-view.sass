@@ -1,0 +1,25 @@
+#windowSizeView_area
+  position: absolute
+  top: 4px
+  left: 4px
+  opacity: .9
+  z-index: 3
+  #windowSizeView
+    font-family: 'Nanum Gothic Coding', monospace
+    +fx
+    +fx-c
+    min-width: 60px
+    padding: .1rem .8rem
+    font-size: 1.4rem
+    border: 1px solid $grayLight
+    border-radius: 1.4rem
+    background-color: rgba(pink, .9)
+    &.sm
+      background-color: rgba(skyblue, .9)
+    &.md
+      background-color: rgba($bgDark, .9)
+      color: $ghost
+    &.lg
+      background-color: rgba(lime, .9)
+    &.xl
+      background-color: rgba(yellow, .9)

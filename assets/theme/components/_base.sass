@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400&display=swap')
+
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap')
+
+html
+  line-height: 1.15
+  position: relative
+  height: 100%
+  width: 100%
+  -ms-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%
+  box-sizing: border-box
+
+body
+  margin: 0
+  padding: 0
+  height: 100%
+  width: 100%
+  font-family: 16px / 1.5 'Noto Sans JP', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  background: #0f1820
+  color: ghostwhite
+
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section, summary
+  display: block
+  &::before
+    color: pink
+  -webkit-font-smoothing: antialiased
+
+audio, canvas, progress, video
+  display: inline-block
+
+audio:not([controls])
+  display: none
+  height: 0
+
+progress
+  vertical-align: baseline
+
+[hidden], template
+  display: none
+
+a
+  background-color: transparent
+  -webkit-text-decoration-skip: objects
+
+  &:active, &:hover
+    outline-width: 0
+
+abbr[title]
+  border-bottom: none
+  text-decoration: underline
+  -webkit-text-decoration: underline dotted
+  text-decoration: underline dotted
+
+b, strong
+  font-weight: inherit
+
+b, strong
+  font-weight: bolder
+
+dfn
+  font-style: italic
+
+h1
+  font-size: 2em
+  margin: 0.67em 0
+
+mark
+  background-color: #ff0
+  color: #000
+
+small
+  font-size: 80%
+
+sub, sup
+  font-size: 75%
+  line-height: 0
+  position: relative
+  vertical-align: baseline
+
+sub
+  bottom: -0.25em
+
+sup
+  top: -0.5em
+
+img
+  border-style: none
+
+svg:not(:root)
+  overflow: hidden
+
+code, kbd, pre, samp
+  font-family: monospace
+  font-size: 1em
+
+figure
+  margin: 1em 40px
+
+hr
+  box-sizing: content-box
+  height: 0
+  overflow: visible
+
+button, input, optgroup, select, textarea
+  font: inherit
+  margin: 0
+
+optgroup
+  font-weight: 500
+
+button, input
+  overflow: visible
+
+button, select
+  text-transform: none
+
+[type=reset], [type=submit], button, html [type=button]
+  -webkit-appearance: button
+  color: gray
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner
+  border-style: none
+  padding: 0
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring
+  outline: 1px dotted ButtonText
+
+fieldset
+  border: 1px solid silver
+  margin: 0 2px
+  padding: 0.35em 0.625em 0.75em
+
+legend
+  box-sizing: border-box
+  color: inherit
+  display: table
+  max-width: 100%
+  padding: 0
+  white-space: normal
+
+textarea
+  overflow: auto
+
+[type=checkbox], [type=radio]
+  box-sizing: border-box
+  padding: 0
+
+[type=number]
+  &::-webkit-inner-spin-button, &::-webkit-outer-spin-button
+    height: auto
+
+[type=search]
+  -webkit-appearance: textfield
+  outline-offset: -2px
+
+  &::-webkit-search-cancel-button, &::-webkit-search-decoration
+    -webkit-appearance: none
+
+  ::-webkit-input-placeholder
+    color: inherit
+    opacity: 0.54
+
+  ::-webkit-file-upload-button
+    -webkit-appearance: button
+    font: inherit
+
+*, ::after, ::before
+  box-sizing: inherit
+
+::-moz-selection, ::selection
+  background-color: rgba(34, 136, 255, 0.2)
+
+
+blockquote, dd, dl, figure, h1, h2, h3, h4, h5, h6, p, pre
+  margin: 0
+
+button
+  background: 0 0
+  border: 0
+  padding: 0
+  cursor: pointer
+
+  &:focus
+    outline: 1px dotted
+    outline: 5px auto -webkit-focus-ring-color
+
+fieldset
+  margin: 0
+  border: 0
+  padding: 0
+
+iframe
+  border: 0
+
+ol, ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+a
+  color: lime
+  -webkit-transition: all 0.15s ease-out
+  transition: all 0.15s ease-out
+
+  &:active
+    color: lime
+
+  &:hover
+    color: white
+    // text-shadow: 1px 1px 0 deeppink
+
+[tabindex="-1"]:focus
+
+  outline: 0 !important
+
+code, pre
+  font-size: 0.875rem
+  line-height: 1.71429
+
+svg
+  display: inline-block
+  vertical-align: text-bottom
+  fill: currentColor
+
+::-webkit-scrollbar
+  height: 0.125rem
+  width: 0.125rem
+
+::-webkit-scrollbar-button
+  height: 0
+  width: 0
+
+::-webkit-scrollbar-thumb
+  background: rgba(83, 83, 99, 0.1)
+  border: 0 none transparent
+  border-radius: 0
+
+  &:hover
+    background: rgba(83, 83, 99, 0.2)
+
+  &:active
+    background: rgba(83, 83, 99, 0.3)
+
+::-webkit-scrollbar-track
+  background: 0 0
+  border: 0 none transparent
+  border-radius: 0
+
+  &:hover, &:active
+    background: 0 0
+
+::-webkit-scrollbar-corner
+  background: 0 0
+
+h1, h2, h3, h4, h5, h6
+  color: white
+  font-weight: 500
+
+h1
+  font-size: 1.75rem
+  line-height: 1.14286
+  font-weight: 500
+  letter-spacing: -0.025em
+
+  // font-feature-settings: "dlig" 1
+
+h2
+  font-size: 1.3125rem
+  line-height: 1.14286
+  font-weight: 500
+
+  // font-feature-settings: "dlig" 1
+
+h3
+  font-size: 1.125rem
+  line-height: 1.33333
+  font-weight: 500
+
+  // font-feature-settings: "dlig" 1
+
+h4, h5, h6
+  font-size: 1rem
+  line-height: 1.5
+  font-weight: 500
+
+mark
+  background-color: rgba(34, 136, 255, 0.3)

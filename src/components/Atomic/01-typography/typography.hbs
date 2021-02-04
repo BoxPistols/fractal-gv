@@ -1,0 +1,36 @@
+<div class='wrap'>
+  {{!-- header --}}
+  <div class='section' style="display:{{_previewHeader}}">
+    <h{{className}} class="head head_{{className}}">
+      {{ _config.dummy.title }}
+    </h{{className}}>
+    <p class={{ font }}>
+      {{ _config.dummy.text }}
+    </p>
+  </div>
+
+  {{!-- フォント サイズ--}}
+  <div class='section' style="display:{{_previewFontSize}}">
+    <h1 class="head_1 mb-16">固定サイズ</h1>
+    {{#each sizes}}
+      <div class="mb-8">
+        <p class={{ class }}>
+          文字サイズ： {{ class }}
+        </p>
+      </div>
+    {{/each}}
+  </div>
+
+  {{!-- レスポンシブフォント --}}
+  <div class='section' style="display:{{_previewRwFontSize}}">
+    <h1 class="head_1 mb-16">可変サイズ</h1>
+    {{#each sizes}}
+      <div class="mb-8">
+        <p class={{ class }}>
+          {{ to }}pxから{{ end }}pxまでvwごとに無段階レスポンシブフォントサイズ
+        </p>
+      </div>
+    {{/each}}
+  </div>
+
+</div>

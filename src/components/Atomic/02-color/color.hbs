@@ -1,0 +1,29 @@
+<!-- カタログ用スタイル：カラー -->
+<div class='wrap'>
+  <section class='section' style="display:{{display}}">
+    <div class='color__org'>
+      <div class='color__mol'>
+        <div class='color__atm {{ className }}'>
+          <p>{{ className }}</p>
+        </div>
+      </div>
+      <div class='color__mol info'>
+        <p>Sass: {{ sassName }}</p>
+        <p>Color: {{ color }}</p>
+      </div>
+  </section>
+
+  <!-- for Mixin -->
+  <section class='section mixin'>
+    <div class='color__org'>
+      {{#each colors}}
+        <div class='color__mol'>
+          <div class='color__atm {{ class }}'>
+            <p>{{ class }}</p>
+            <p>{{ c-name }}</p>
+          </div>
+        </div>
+      {{/each}}
+  </section>
+
+</div>

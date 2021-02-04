@@ -62,14 +62,14 @@
         "_previewFontSize": "none",
         "_previewRwFontSize": "block",
         "sizes": [
-          { "class": "tx-s", "to": 12, "end": 14 },
-          { "class": "tx-sm", "to": 14, "end": 16 },
-          { "class": "tx-m", "to": 16, "end": 18 },
-          { "class": "tx-lm", "to": 18, "end": 22 },
-          { "class": "tx-sl", "to": 18, "end": 22 },
-          { "class": "tx-ml", "to": 20, "end": 24 },
-          { "class": "tx-l", "to": 24, "end": 28 },
-          { "class": "tx-x", "to": 28, "end": 32 }
+          { "class": "tx-xxs", "vw": 1, "to": 12, "end": 14 },
+          { "class": "tx-xs", "vw": 1, "to": 14, "end": 16 },
+          { "class": "tx-sm", "vw": 1.5, "to": 16, "end": 18 },
+          { "class": "tx-md", "vw": 1.5, "to": 18, "end": 22 },
+          { "class": "tx-lg", "vw": 2, "to": 22, "end": 26 },
+          { "class": "tx-xl", "vw": 2, "to": 26, "end": 30 },
+          { "class": "tx-xxl", "vw": 3, "to": 30, "end": 34 },
+          { "class": "tx-xxxl", "vw": 3, "to": 34, "end": 38 }
         ]
       }
     }

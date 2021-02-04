@@ -77,3 +77,6 @@ yarn-debug.log*
 # Deploy
 docs/
 react/
+
+# Editor
+.vscode/

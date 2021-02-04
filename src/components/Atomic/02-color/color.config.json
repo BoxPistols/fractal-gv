@@ -13,15 +13,24 @@
       "context": {
         "display": "none",
         "colors": [
-          { "class": "main", "c-name": "#53a6c7" },
-          { "class": "accent", "c-name": "#cf5da0" },
-          { "class": "ghost", "c-name": "ghostwhite" },
-          { "class": "grayLight", "c-name": "#c6cbce" },
-          { "class": "gray", "c-name": "#6e7377" },
-          { "class": "grayDark", "c-name": "#44484b" },
-          { "class": "black", "c-name": "#25303b" },
-          { "class": "bgDark", "c-name": "#1e2325" }
+          { "class": "brand-bg", "c-name": "#e6544a" },
+          { "class": "main-bg", "c-name": "#53a6c7" },
+          { "class": "accent-bg", "c-name": "#cf5da0" },
+          { "class": "ghost-bg", "c-name": "ghostwhite" },
+          { "class": "grayLight-bg", "c-name": "#c6cbce" },
+          { "class": "gray-bg", "c-name": "#6e7377" },
+          { "class": "grayDark-bg", "c-name": "#44484b" },
+          { "class": "black-bg", "c-name": "#25303b" },
+          { "class": "bgDark-bg", "c-name": "#1e2325" }
         ]
+      }
+    },
+    {
+      "name": "brand",
+      "context": {
+        "className": "brand",
+        "sassName": "$brand",
+        "color": "#e6544a"
       }
     },
     {

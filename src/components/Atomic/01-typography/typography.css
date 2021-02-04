@@ -1,113 +1,18 @@
-@charset "UTF-8";
-.head {
-  line-height: 1.5;
-  font-weight: 500;
-  margin-bottom: 0.5em;
-}
-.head_1 {
-  font-size: 3.2rem;
-}
-.head_2 {
-  font-size: 2.8rem;
-}
-.head_3 {
-  font-size: 2.4rem;
-}
-.head_4 {
-  font-size: 2.2rem;
-}
-.head_5 {
-  font-size: 2rem;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 30 | @for $i from 0 through (($endPx - $startPx) / $multiplePx)
+ *    |                          ^^^^^^
+ *    '
+ *   assets/css/components/atom/_typography.sass 30:26        @import
+ *   src/components/Atomic/01-typography/typography.sass 1:9  root stylesheet */
 
-/** Font-Sizes **/
-.fz8 {
-  font-size: 0.8rem;
-}
-
-.fz12 {
-  font-size: 1.2rem;
-}
-
-.fz16 {
-  font-size: 1.6rem;
-}
-
-.fz20 {
-  font-size: 2rem;
-}
-
-.fz24 {
-  font-size: 2.4rem;
-}
-
-.fz28 {
-  font-size: 2.8rem;
-}
-
-.fz32 {
-  font-size: 3.2rem;
-}
-
-.fz36 {
-  font-size: 3.6rem;
-}
-
-.fz40 {
-  font-size: 4rem;
-}
-
-.fz44 {
-  font-size: 4.4rem;
-}
-
-.fz48 {
-  font-size: 4.8rem;
-}
-
-/** Responsive font Size **/
-/* *  s: 12-14
- * * sm: 14-16
- * *  m: 14-18
- * * lm: 16-20
- * * sl: 18-22
- * * ml: 20-24
- * *    l: 22-26
- * * l: 24-28
- * *    xl: 26-30
- * *    sx: 28-32
- * *  x: 28-32
- * */
-/** IE対応： フォールバックの設置 = 中間サイズ or 最小サイズ **/
-/* 12px @ 400px increasing to 14px @ 1440px */
-.tx-s {
-  font-size: 14px;
-}
-
-.tx-sm {
-  font-size: 16px;
-}
-
-.tx-m {
-  font-size: 18px;
-}
-
-.tx-lm {
-  font-size: 2rem;
-}
-
-.tx-sl {
-  font-size: 2.2rem;
-}
-
-.tx-ml {
-  font-size: 2.4rem;
-}
-
-.tx-l {
-  font-size: 2.8rem;
-}
-
-.tx-x {
-  font-size: 3.2rem;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 30 \2502  @for $i from 0 through (($endPx - $startPx) / $multiplePx)\a    \2502                           ^^^^^^\a    \2575 \a   assets/css/components/atom/_typography.sass 30:26        @import\a   src/components/Atomic/01-typography/typography.sass 1:9  root stylesheet";
 }

@@ -4,7 +4,7 @@
 const fractal = (module.exports = require('@frctl/fractal').create())
 
 /* プロジェクト・タイトルの設定 */
-fractal.set('project.title', 'SEKAI DESIGN-SYSTEM')
+fractal.set('project.title', 'Fractal-Gv')
 
 /* componentsディレクトリの指定 */
 fractal
@@ -31,7 +31,7 @@ fractal
 fractal
   .web
   .set('static.path', __dirname + '/assets')
-  
+
 /* 静的ファイルの書き出し場所 */
 fractal
   .web

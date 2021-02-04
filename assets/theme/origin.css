@@ -434,7 +434,49 @@ mark {
 }
 
 /** Colors **/
-/** preview for color **/
+.base-bg {
+  background-color: white;
+  color: #25303b;
+}
+
+.ghost-bg {
+  background-color: ghostwhite;
+  color: #25303b;
+}
+
+.main-bg {
+  background-color: #4292a7;
+}
+
+.brand-bg {
+  background-color: #ca413d;
+}
+
+.accent-bg {
+  background-color: #9b5ddd;
+}
+
+.gray-bg {
+  background-color: #6e7377;
+}
+
+.grayLight-bg {
+  background-color: #c6cbce;
+}
+
+.grayDark-bg {
+  background-color: #44484b;
+}
+
+.black-bg {
+  background-color: #25303b;
+}
+
+.bgDark-bg {
+  background-color: #1e2325;
+}
+
+/** color for preview  **/
 .color__org {
   display: flex;
   flex-wrap: wrap;
@@ -461,11 +503,14 @@ mark {
   border-radius: 8px;
   color: white;
 }
+.color__atm.brand {
+  background-color: #ca413d;
+}
 .color__atm.base {
   background-color: white;
   color: #25303b;
 }
-.color__atm.ghost {
+.color__atm.ghost, .color__atm.ghost-bg {
   background-color: ghostwhite;
   color: #25303b;
 }
@@ -473,13 +518,14 @@ mark {
   background-color: #4292a7;
 }
 .color__atm.accent {
-  background-color: #cc5b87;
+  background-color: #9b5ddd;
 }
 .color__atm.gray {
   background-color: #6e7377;
 }
-.color__atm.grayLight {
+.color__atm.grayLight, .color__atm.grayLight-bg {
   background-color: #c6cbce;
+  color: #25303b;
 }
 .color__atm.grayDark {
   background-color: #44484b;
@@ -528,7 +574,7 @@ mark {
   display: flex;
   align-items: center;
   position: relative;
-  background: linear-gradient(145deg, #11171a, #1f2327);
+  background: linear-gradient(118deg, #363282, #c13b36);
   box-shadow: inset 0 -1px 0 0 rgba(0, 255, 0, 0.5);
   text-overflow: ellipsis;
   color: ghostwhite;
@@ -548,6 +594,7 @@ mark {
   color: inherit;
   text-decoration: none;
 }
+
 .Header-button {
   display: block;
   flex-shrink: 0;

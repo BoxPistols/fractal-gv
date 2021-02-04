@@ -9,13 +9,13 @@
         font-size: clamp(30px, calc(1vw * 32 / 12), 34px)
     &_2
         +fz(28)
-        font-size: clamp(26px,  calc(1vw * 28 / 12), 30px)
+        font-size: clamp(26px, calc(1vw * 28 / 12), 30px)
     &_3
         +fz(24)
-        font-size: clamp(22px,  calc(1vw * 24 / 12), 26px)
+        font-size: clamp(22px, calc(1vw * 24 / 12), 26px)
     &_4
         +fz(20)
-        font-size: clamp(18px,  calc(1vw * 20 / 12), 22px)
+        font-size: clamp(18px, calc(1vw * 20 / 12), 22px)
     &_5
         +fz(20)
         font-size: clamp(16px, calc(1vw * 17 / 12), 18px)
@@ -24,13 +24,14 @@
 
 /** Font-Sizes **/
 // Start 8px End 48px Multiple 4px
+
         $startPx: 8
         $endPx: 48
         $multiplePx: 4
+
 @for $i from 0 through (($endPx - $startPx) / $multiplePx)
     .fz#{$startPx + $i * $multiplePx}
         font-size: #{($startPx + $i * $multiplePx) / 10}rem
-
 
 /** Responsi    ve font Size **/
 // TODO: クラス名の決定、メインのフォントサイズ運用により決定させる
@@ -38,50 +39,50 @@
 // TODO : px or rem 設計の選択
 
 /***
-  * .tx-xxs
-  * .tx-xs
-  * .tx-sm
-  * .tx-md
-  * .tx-lg
-  * .tx-xl
-  * .tx-xxl
-  * .tx-xxxl
-  ***/
+ * .tx-xxs
+ * .tx-xs
+ * .tx-sm
+ * .tx-md
+ * .tx-lg
+ * .tx-xl
+ * .tx-xxl
+ * .tx-xxxl
+ ***/
 
 /** IE対応： フォールバックの設置 = 中間サイズ rem **/
 
 // +1vw領域
 .tx-xxs // 12-14
     +fz(13) // for IE
-    font-size: clamp(12px, calc(1vw * 12 / 12), 14px)
+    font-size: clamp(12px, calc(1vw * 12 / 10), 14px)
 
 .tx-xs // 14-16
     +fz(15)
-    font-size: clamp(14px, calc(1vw * 15 / 12), 16px)
+    font-size: clamp(14px, calc(1vw * 14 / 10), 16px)
 
 // +1.5vw領域
 .tx-sm // 16-18
     +fz(17)
-    font-size: clamp(16px, calc(1vw * 17 / 12), 18px)
+    font-size: clamp(16px, calc(1vw * 16 / 10), 18px)
 
 .tx-md // 18-22
     +fz(20)
-    font-size: clamp(18px,  calc(1vw * 20 / 12), 22px)
+    font-size: clamp(18px, calc(1vw * 18 / 10), 22px)
 
 // +2vw領域
 .tx-lg // 22-26
     +fz(24)
-    font-size: clamp(22px,  calc(1vw * 24 / 12), 26px)
+    font-size: clamp(22px, calc(1vw * 22 / 10), 26px)
 
 .tx-xl // 26-30
     +fz(28)
-    font-size: clamp(26px,  calc(1vw * 28 / 12), 30px)
+    font-size: clamp(26px, calc(1vw * 26 / 10), 30px)
 
 // +vw領域
 .tx-xxl // 30-34
     +fz(32)
-    font-size: clamp(30px, calc(1vw * 32 / 12), 34px)
+    font-size: clamp(30px, calc(1vw * 30 / 10), 34px)
 
 .tx-xxxl // 34-38
     +fz(36)
-    font-size: clamp(34px, calc(1vw * 36 / 12), 38px)
+    font-size: clamp(34px, calc(1vw * 34 / 10), 38px)

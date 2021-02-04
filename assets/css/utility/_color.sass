@@ -6,58 +6,94 @@ $white: white
 $ghost: ghostwhite
 $black: #25303b
 $bgDark: #1e2325
+$brand: #ca413d
 $main: #4292a7
-$accent: #cc5b87
+$accent: #9b5ddd
 $gray: #6e7377
 $grayDark: #44484b
 $grayLight: #c6cbce
-
 
 // カスケーディングを使う場合  / 使い方： color: var(--shakespeareColor)
 // :root
 //   --shakespeareColor:  #53a6c7
 //   --hopbushColor: #cf5da0
 
-/** preview for color **/
+.base
+    &-bg
+        background-color: $white
+        color: $black
+.ghost
+    &-bg
+        background-color: $ghost
+        color: $black
+.main
+    &-bg
+        background-color: $main
+.brand
+    &-bg
+        background-color: $brand
+.accent
+    &-bg
+        background-color: $accent
+.gray
+    &-bg
+        background-color: $gray
+.grayLight
+    &-bg
+        background-color: $grayLight
+.grayDark
+    &-bg
+        background-color: $grayDark
+.black
+    &-bg
+        background-color: $black
+.bgDark
+    &-bg
+        background-color: $bgDark
+
+/** color for preview  **/
 .color
-  &__org
-    @include fx
-    flex-wrap: wrap
-  &__mol
-    display: flex
-    margin: 8px
-    &.info
-      flex-direction: column
-      justify-content: center
-      color: $gray
-  &__atm
-    width: 96px
-    height: 96px
-    @include fx
-    @include fx-col
-    @include fx-c
-    text-align: center
-    font-size: 1.4rem
-    border: 1px solid $grayLight
-    border-radius: 8px
-    color: $white
-    &.base
-      background-color: $white
-      color: $black
-    &.ghost
-      background-color: $ghost
-      color: $black
-    &.main
-      background-color: $main
-    &.accent
-      background-color: $accent
-    &.gray
-      background-color: $gray
-    &.grayLight
-      background-color: $grayLight
-    &.grayDark
-      background-color: $grayDark
-    &.black
-      background-color: $black
-    &.bgDark
-      background-color: $bgDark
+    &__org
+        @include fx
+        flex-wrap: wrap
+    &__mol
+        display: flex
+        margin: 8px
+        &.info
+            flex-direction: column
+            justify-content: center
+            color: $gray
+    &__atm
+        width: 96px
+        height: 96px
+        @include fx
+        @include fx-col
+        @include fx-c
+        text-align: center
+        font-size: 1.4rem
+        border: 1px solid $grayLight
+        border-radius: 8px
+        color: $white
+        &.brand
+            background-color: $brand
+        &.base
+            background-color: $white
+            color: $black
+        &.ghost, &.ghost-bg
+            background-color: $ghost
+            color: $black
+        &.main
+            background-color: $main
+        &.accent
+            background-color: $accent
+        &.gray
+            background-color: $gray
+        &.grayLight, &.grayLight-bg
+            background-color: $grayLight
+            color: $black
+        &.grayDark
+            background-color: $grayDark
+        &.black
+            background-color: $black
+        &.bgDark
+            background-color: $bgDark

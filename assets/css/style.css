@@ -844,7 +844,49 @@
 }
 
 /** Colors **/
-/** preview for color **/
+.base-bg {
+  background-color: white;
+  color: #25303b;
+}
+
+.ghost-bg {
+  background-color: ghostwhite;
+  color: #25303b;
+}
+
+.main-bg {
+  background-color: #4292a7;
+}
+
+.brand-bg {
+  background-color: #ca413d;
+}
+
+.accent-bg {
+  background-color: #9b5ddd;
+}
+
+.gray-bg {
+  background-color: #6e7377;
+}
+
+.grayLight-bg {
+  background-color: #c6cbce;
+}
+
+.grayDark-bg {
+  background-color: #44484b;
+}
+
+.black-bg {
+  background-color: #25303b;
+}
+
+.bgDark-bg {
+  background-color: #1e2325;
+}
+
+/** color for preview  **/
 .color__org {
   display: flex;
   flex-wrap: wrap;
@@ -871,11 +913,14 @@
   border-radius: 8px;
   color: white;
 }
+.color__atm.brand {
+  background-color: #ca413d;
+}
 .color__atm.base {
   background-color: white;
   color: #25303b;
 }
-.color__atm.ghost {
+.color__atm.ghost, .color__atm.ghost-bg {
   background-color: ghostwhite;
   color: #25303b;
 }
@@ -883,13 +928,14 @@
   background-color: #4292a7;
 }
 .color__atm.accent {
-  background-color: #cc5b87;
+  background-color: #9b5ddd;
 }
 .color__atm.gray {
   background-color: #6e7377;
 }
-.color__atm.grayLight {
+.color__atm.grayLight, .color__atm.grayLight-bg {
   background-color: #c6cbce;
+  color: #25303b;
 }
 .color__atm.grayDark {
   background-color: #44484b;
@@ -1284,42 +1330,42 @@ button.btn.full a {
 /** IE対応： フォールバックの設置 = 中間サイズ rem **/
 .tx-xxs {
   font-size: 1.3rem;
-  font-size: clamp(12px, calc(1vw * 12 / 12), 14px);
+  font-size: clamp(12px, calc(1vw * 12 / 10), 14px);
 }
 
 .tx-xs {
   font-size: 1.5rem;
-  font-size: clamp(14px, calc(1vw * 15 / 12), 16px);
+  font-size: clamp(14px, calc(1vw * 14 / 10), 16px);
 }
 
 .tx-sm {
   font-size: 1.7rem;
-  font-size: clamp(16px, calc(1vw * 17 / 12), 18px);
+  font-size: clamp(16px, calc(1vw * 16 / 10), 18px);
 }
 
 .tx-md {
   font-size: 2rem;
-  font-size: clamp(18px, calc(1vw * 20 / 12), 22px);
+  font-size: clamp(18px, calc(1vw * 18 / 10), 22px);
 }
 
 .tx-lg {
   font-size: 2.4rem;
-  font-size: clamp(22px, calc(1vw * 24 / 12), 26px);
+  font-size: clamp(22px, calc(1vw * 22 / 10), 26px);
 }
 
 .tx-xl {
   font-size: 2.8rem;
-  font-size: clamp(26px, calc(1vw * 28 / 12), 30px);
+  font-size: clamp(26px, calc(1vw * 26 / 10), 30px);
 }
 
 .tx-xxl {
   font-size: 3.2rem;
-  font-size: clamp(30px, calc(1vw * 32 / 12), 34px);
+  font-size: clamp(30px, calc(1vw * 30 / 10), 34px);
 }
 
 .tx-xxxl {
   font-size: 3.6rem;
-  font-size: clamp(34px, calc(1vw * 36 / 12), 38px);
+  font-size: clamp(34px, calc(1vw * 34 / 10), 38px);
 }
 
 #toggleMode_area {

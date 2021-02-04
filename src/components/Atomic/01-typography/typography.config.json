@@ -32,12 +32,6 @@
       }
     },
     {
-      "name": "head_5",
-      "context": {
-        "className": "5"
-      }
-    },
-    {
       "name": "Font-Size-mix",
       "context": {
         "_previewHeader": "none",

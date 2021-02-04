@@ -6,14 +6,19 @@
     margin-bottom: .5em
     &_1
         +fz(32)
+        font-size: clamp(30px, calc(1vw * 32 / 12), 34px)
     &_2
         +fz(28)
+        font-size: clamp(26px,  calc(1vw * 28 / 12), 30px)
     &_3
         +fz(24)
+        font-size: clamp(22px,  calc(1vw * 24 / 12), 26px)
     &_4
-        +fz(22)
+        +fz(20)
+        font-size: clamp(18px,  calc(1vw * 20 / 12), 22px)
     &_5
         +fz(20)
+        font-size: clamp(16px, calc(1vw * 17 / 12), 18px)
 
 // FIXME! & TODO: All font size to => fx(num) / later 62.5% to 100%
 
@@ -75,8 +80,8 @@
 // +vw領域
 .tx-xxl // 30-34
     +fz(32)
-    font-size: clamp(30px, 3vw, 34px)
+    font-size: clamp(30px, calc(1vw * 32 / 12), 34px)
 
 .tx-xxxl // 34-38
     +fz(36)
-    font-size: clamp(34px, 3vw, 38px)
+    font-size: clamp(34px, calc(1vw * 36 / 12), 38px)

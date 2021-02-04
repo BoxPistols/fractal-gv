@@ -1198,18 +1198,23 @@ button.btn.full a {
 }
 .head_1 {
   font-size: 3.2rem;
+  font-size: clamp(30px, calc(1vw * 32 / 12), 34px);
 }
 .head_2 {
   font-size: 2.8rem;
+  font-size: clamp(26px, calc(1vw * 28 / 12), 30px);
 }
 .head_3 {
   font-size: 2.4rem;
+  font-size: clamp(22px, calc(1vw * 24 / 12), 26px);
 }
 .head_4 {
-  font-size: 2.2rem;
+  font-size: 2rem;
+  font-size: clamp(18px, calc(1vw * 20 / 12), 22px);
 }
 .head_5 {
   font-size: 2rem;
+  font-size: clamp(16px, calc(1vw * 17 / 12), 18px);
 }
 
 /** Font-Sizes **/
@@ -1309,12 +1314,12 @@ button.btn.full a {
 
 .tx-xxl {
   font-size: 3.2rem;
-  font-size: clamp(30px, 3vw, 34px);
+  font-size: clamp(30px, calc(1vw * 32 / 12), 34px);
 }
 
 .tx-xxxl {
   font-size: 3.6rem;
-  font-size: clamp(34px, 3vw, 38px);
+  font-size: clamp(34px, calc(1vw * 36 / 12), 38px);
 }
 
 #toggleMode_area {

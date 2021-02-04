@@ -1,15 +1,19 @@
 {
-    "title": "with image",
-    "name": "with image",
-    "context": {
-        "card_style": "card_style",
-        "card_imageArea": "card_imageArea",
-        "card_image": "card_image",
-        "card_textArea": "card_textArea",
-        "cardTitle": "cardTitle",
-        "cardText": "cardText",
-        "card_style": "card_style",
-        "text": "送信する",
-        "image": "https://placekitten.com/640/360"
-    }
+  "title": "with image",
+  "name": "with image",
+  "context": {
+    "card_style": "card_style",
+    "card_imageArea": "card_imageArea",
+    "card_image": "card_image",
+    "card_textArea": "card_textArea",
+    "cardTitle": "cardTitle",
+    "cardText": "cardText",
+    "card_style": "card_style",
+    "text": "送信する",
+    "image": "https://placekitten.com/640/360",
+    "head": "3",
+    "display": "fx fx-jc-e",
+    "class": "plate",
+    "button": "送信する"
+  }
 }

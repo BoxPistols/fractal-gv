@@ -1065,10 +1065,13 @@ img {
 }
 
 .card {
+  min-width: 320px;
+  max-width: 640px;
   margin: 24px;
   border: 1px solid #c6cbce;
 }
-.card .card_textArea {
+
+.card_textArea {
   padding: 1.2rem 2.4rem;
 }
 

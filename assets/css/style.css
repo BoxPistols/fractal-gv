@@ -1240,41 +1240,7 @@ button.btn.full a {
   min-width: 100%;
 }
 
-.head {
-  line-height: 1.5;
-  font-weight: 500;
-  margin-bottom: 0.5em;
-}
-.head_1 {
-  font-size: 3.2rem;
-  font-size: clamp(30px, calc(1vw * 32 / 12), 34px);
-}
-.head_2 {
-  font-size: 2.8rem;
-  font-size: clamp(26px, calc(1vw * 28 / 12), 30px);
-}
-.head_3 {
-  font-size: 2.4rem;
-  font-size: clamp(22px, calc(1vw * 24 / 12), 26px);
-}
-.head_4 {
-  font-size: 2rem;
-  font-size: clamp(18px, calc(1vw * 20 / 12), 22px);
-}
-.head_5 {
-  font-size: 2rem;
-  font-size: clamp(16px, calc(1vw * 17 / 12), 18px);
-}
-
 /** Font-Sizes **/
-.fz0 {
-  font-size: 0rem;
-}
-
-.fz4 {
-  font-size: 0.4rem;
-}
-
 .fz8 {
   font-size: 0.8rem;
 }
@@ -1317,6 +1283,32 @@ button.btn.full a {
 
 .fz48 {
   font-size: 4.8rem;
+}
+
+.head {
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.head_1 {
+  font-size: 3.2rem;
+  font-size: clamp(30px, calc(1vw * 32 / 12), 34px);
+}
+.head_2 {
+  font-size: 2.8rem;
+  font-size: clamp(26px, calc(1vw * 28 / 12), 30px);
+}
+.head_3 {
+  font-size: 2.4rem;
+  font-size: clamp(22px, calc(1vw * 24 / 12), 26px);
+}
+.head_4 {
+  font-size: 2rem;
+  font-size: clamp(18px, calc(1vw * 20 / 12), 22px);
+}
+.head_5 {
+  font-size: 2rem;
+  font-size: clamp(16px, calc(1vw * 17 / 12), 18px);
 }
 
 /** Responsi    ve font Size **/

@@ -1,0 +1,11 @@
+// FIXME! & TODO: All font size to => fx(num) / later 62.5% to 100%
+
+/** Font-Sizes **/
+// Start 8px End 48px Multiple 4px
+$startPoint: 8
+$endPoint: 48
+$multiplePx: 4
+
+@for $i from 0 through (($endPoint - $startPoint) / $multiplePx)
+    .fz#{$startPoint + $i * $multiplePx}
+        font-size: #{($startPoint + $i * $multiplePx) / 10}rem

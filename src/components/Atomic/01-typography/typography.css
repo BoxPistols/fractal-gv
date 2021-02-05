@@ -1,18 +1,78 @@
-/* Error: Undefined variable.
- *    ,
- * 30 | @for $i from 0 through (($endPx - $startPx) / $multiplePx)
- *    |                          ^^^^^^
- *    '
- *   assets/css/components/atom/_typography.sass 30:26        @import
- *   src/components/Atomic/01-typography/typography.sass 1:9  root stylesheet */
+@charset "UTF-8";
+.head {
+  line-height: 1.5;
+  font-weight: 500;
+  margin-bottom: 0.5em;
+}
+.head_1 {
+  font-size: 3.2rem;
+  font-size: clamp(30px, calc(1vw * 32 / 12), 34px);
+}
+.head_2 {
+  font-size: 2.8rem;
+  font-size: clamp(26px, calc(1vw * 28 / 12), 30px);
+}
+.head_3 {
+  font-size: 2.4rem;
+  font-size: clamp(22px, calc(1vw * 24 / 12), 26px);
+}
+.head_4 {
+  font-size: 2rem;
+  font-size: clamp(18px, calc(1vw * 20 / 12), 22px);
+}
+.head_5 {
+  font-size: 2rem;
+  font-size: clamp(16px, calc(1vw * 17 / 12), 18px);
+}
 
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a    \2577 \a 30 \2502  @for $i from 0 through (($endPx - $startPx) / $multiplePx)\a    \2502                           ^^^^^^\a    \2575 \a   assets/css/components/atom/_typography.sass 30:26        @import\a   src/components/Atomic/01-typography/typography.sass 1:9  root stylesheet";
+/** Responsi    ve font Size **/
+/***
+ * * .tx-xxs
+ * * .tx-xs
+ * * .tx-sm
+ * * .tx-md
+ * * .tx-lg
+ * * .tx-xl
+ * * .tx-xxl
+ * * .tx-xxxl
+ * ***/
+/** IE対応： フォールバックの設置 = 中間サイズ rem **/
+.tx-xxs {
+  font-size: 1.3rem;
+  font-size: clamp(12px, calc(1vw * 12 / 10), 14px);
+}
+
+.tx-xs {
+  font-size: 1.5rem;
+  font-size: clamp(14px, calc(1vw * 14 / 10), 16px);
+}
+
+.tx-sm {
+  font-size: 1.7rem;
+  font-size: clamp(16px, calc(1vw * 16 / 10), 18px);
+}
+
+.tx-md {
+  font-size: 2rem;
+  font-size: clamp(18px, calc(1vw * 18 / 10), 22px);
+}
+
+.tx-lg {
+  font-size: 2.4rem;
+  font-size: clamp(22px, calc(1vw * 22 / 10), 26px);
+}
+
+.tx-xl {
+  font-size: 2.8rem;
+  font-size: clamp(26px, calc(1vw * 26 / 10), 30px);
+}
+
+.tx-xxl {
+  font-size: 3.2rem;
+  font-size: clamp(30px, calc(1vw * 30 / 10), 34px);
+}
+
+.tx-xxxl {
+  font-size: 3.6rem;
+  font-size: clamp(34px, calc(1vw * 34 / 10), 38px);
 }

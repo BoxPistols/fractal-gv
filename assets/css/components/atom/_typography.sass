@@ -20,18 +20,6 @@
         +fz(20)
         font-size: clamp(16px, calc(1vw * 17 / 12), 18px)
 
-// FIXME! & TODO: All font size to => fx(num) / later 62.5% to 100%
-
-/** Font-Sizes **/
-// Start 8px End 48px Multiple 4px
-
-        $startPx: 8
-        $endPx: 48
-        $multiplePx: 4
-
-@for $i from 0 through (($endPx - $startPx) / $multiplePx)
-    .fz#{$startPx + $i * $multiplePx}
-        font-size: #{($startPx + $i * $multiplePx) / 10}rem
 
 /** Responsi    ve font Size **/
 // TODO: クラス名の決定、メインのフォントサイズ運用により決定させる

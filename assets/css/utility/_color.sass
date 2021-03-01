@@ -13,11 +13,12 @@ $gray: #6e7377
 $grayDark: #44484b
 $grayLight: #c6cbce
 
-// カスケーディングを使う場合  / 使い方： color: var(--shakespeareColor)
+// カスケーディングを使う場合  / 使い方： c`olor: var(--shakespeareColor)
 // :root
 //   --shakespeareColor:  #53a6c7
 //   --hopbushColor: #cf5da0
 
+/* background */
 .base
     &-bg
         background-color: $white
@@ -67,7 +68,7 @@ $grayLight: #c6cbce
         width: 96px
         height: 96px
         @include fx
-        @include fx-col
+        @include fx-d-col
         @include fx-c
         text-align: center
         font-size: 1.4rem

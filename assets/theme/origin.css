@@ -24,7 +24,7 @@
   display: flex;
 }
 
-.fx-col {
+.fx-d-col {
   flex-direction: column;
 }
 
@@ -47,6 +47,22 @@
 
 .fx-ai-e {
   align-items: flex-end;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
 }
 
 html {
@@ -408,7 +424,7 @@ mark {
   display: flex;
 }
 
-.fx-col {
+.fx-d-col {
   flex-direction: column;
 }
 
@@ -433,7 +449,24 @@ mark {
   align-items: flex-end;
 }
 
+.w-100 {
+  width: 100%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-25 {
+  width: 25%;
+}
+
 /** Colors **/
+/* background */
 .base-bg {
   background-color: white;
   color: #25303b;

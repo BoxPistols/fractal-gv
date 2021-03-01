@@ -1,6 +1,5 @@
 // Reactパッケージの読み込み
 import React from 'react'
-import { Fragment } from 'react'
 import ReactDOM from 'react-dom'
 import './index.sass'
 
@@ -32,7 +31,7 @@ class Button extends React.Component {
 						this.state.isMorning ? x :
 						y}{' '}
 				</h1>
-			</React.Fragment>
+            </React.Fragment>
 		)
 	}
 }

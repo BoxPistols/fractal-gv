@@ -1,0 +1,74 @@
+/* === text-color === */
+.color-white {
+  color: white;
+}
+
+.color-ghost {
+  color: ghostwhite;
+}
+
+.color-black {
+  color: #25303b;
+}
+
+.color-bgDark {
+  color: #1e2325;
+}
+
+.color-brand {
+  color: #ca413d;
+}
+
+.color-main {
+  color: #4292a7;
+}
+
+.color-accent {
+  color: #9b5ddd;
+}
+
+.color-gray {
+  color: #6e7377;
+}
+
+.color-grayDark {
+  color: #44484b;
+}
+
+.color-grayLight {
+  color: #c6cbce;
+}
+
+/* === background  === */
+.bg_base {
+  background-color: white;
+  color: #25303b;
+}
+.bg-ghost {
+  background-color: ghostwhite;
+  color: #25303b;
+}
+.bg-main {
+  background-color: #4292a7;
+}
+.bg-brand {
+  background-color: #ca413d;
+}
+.bg-accent {
+  background-color: #9b5ddd;
+}
+.bg-gray {
+  background-color: #6e7377;
+}
+.bg-grayLight {
+  background-color: #c6cbce;
+}
+.bg-grayDark {
+  background-color: #44484b;
+}
+.bg-black {
+  background-color: #25303b;
+}
+.bg-bgDark {
+  background-color: #1e2325;
+}

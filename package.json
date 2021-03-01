@@ -1,40 +1,44 @@
 {
-  "name": "design-system-fractal",
-  "version": "1.1.1",
-  "description": "create origin theme",
-  "author": "asagiri design",
-  "license": "ISC",
-  "main": "index.js",
-  "scripts": {
-    "dev": "npm-run-all -p start:*",
-    "start:fractal": "fractal start --sync",
-    "start:parcel": "parcel ./jsx/index.html -p 4649 -d react",
-    "css": "npm-run-all -p css:*",
-    "css:assets": "sass --watch assets/css/. assets/theme/.",
-    "css:components": "sass --watch --no-source-map src/components/",
-    "css-build": "npm-run-all -p css-build:*",
-    "css-build:css-minify": "sass --watch --no-source-map --stylen compressed assets/css/. assets/theme/.",
-    "build": "fractal build",
-    "react-build": "npm-run-all -p build:*",
-    "build:jsx-clean": "rm -rf react/*",
-    "build:react-build": "parcel build ./jsx/index.html -d react"
-  },
-  "dependencies": {
-    "@frctl/fractal": "^1.5.2",
-    "@frctl/mandelbrot": "^1.7.0",
-    "faker": "^5.2.0",
-    "loadash": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0"
-  },
-  "devDependencies": {
-    "@types/react": "^16.14.2",
-    "@types/react-dom": "^16.9.10",
-    "npm-run-all": "^4.1.5",
-    "parcel-bundler": "^1.12.4",
-    "prettier": "^2.2.1",
-    "sass": "^1.32.5",
-    "typescript": "^4.1.3"
-  }
+	"name": "design-system-fractal",
+	"version": "1.1.1",
+	"description": "create origin theme",
+	"author": "asagiri design",
+	"license": "ISC",
+	"main": "index.js",
+	"scripts": {
+		"dev": "npm-run-all -p start:*",
+		"start:fractal": "fractal start --sync",
+		"start:parcel": "parcel ./jsx/index.html -p 4649 -d react",
+		"css": "npm-run-all -p css:*",
+		"css:assets": "sass --watch assets/css/. assets/theme/.",
+		"css:components": "sass --watch --no-source-map src/components/",
+		"css-build": "npm-run-all -p css-build:*",
+		"css-build:css-minify": "sass --watch --no-source-map --stylen compressed assets/css/. assets/theme/.",
+		"build": "fractal build",
+		"react-build": "npm-run-all -p build:*",
+		"build:jsx-clean": "rm -rf react/*",
+		"build:react-build": "parcel build ./jsx/index.html -d react"
+	},
+	"dependencies": {
+		"@frctl/fractal": "^1.5.2",
+		"@frctl/mandelbrot": "^1.7.0",
+		"faker": "^5.2.0",
+		"loadash": "^1.0.0",
+		"node-sass": "^4.14.1",
+		"parcel": "^2.0.0-nightly.619",
+		"postcss-loader": "^5.1.0",
+		"react": "^16.14.0",
+		"react-dom": "^16.14.0"
+	},
+	"devDependencies": {
+		"@types/react": "^16.14.2",
+		"@types/react-dom": "^16.9.10",
+		"autoprefixer": "^10.2.5",
+		"npm-run-all": "^4.1.5",
+		"parcel-bundler": "^1.12.4",
+		"postcss": "^8.2.7",
+		"prettier": "^2.2.1",
+		"sass": "^1.32.5",
+		"typescript": "^4.1.3"
+	}
 }

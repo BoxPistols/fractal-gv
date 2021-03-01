@@ -1,8 +1,8 @@
 // Reactパッケージの読み込み
 import React from 'react'
-import { Fragment } from 'react'
 import ReactDOM from 'react-dom'
-import './index.sass'
+import Card from './Card'
+import './index.scss'
 
 console.log('React')
 
@@ -32,7 +32,7 @@ class Button extends React.Component {
 						this.state.isMorning ? x :
 						y}{' '}
 				</h1>
-			</React.Fragment>
+            </React.Fragment>
 		)
 	}
 }
@@ -44,6 +44,9 @@ class App extends React.Component {
 			<div className='w-100 fx fx-d-col fx-c'>
 				<h1 className='fz44'>Hello React!</h1>
 				<Button />
+                <Card />
+                <Card />
+                <Card />
 			</div>
 		)
 	}

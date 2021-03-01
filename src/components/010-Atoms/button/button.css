@@ -1,0 +1,269 @@
+/* === text-color === */
+.color-white {
+  color: white;
+}
+
+.color-ghost {
+  color: ghostwhite;
+}
+
+.color-black {
+  color: #25303b;
+}
+
+.color-bgDark {
+  color: #1e2325;
+}
+
+.color-brand {
+  color: #ca413d;
+}
+
+.color-main {
+  color: #4292a7;
+}
+
+.color-accent {
+  color: #9b5ddd;
+}
+
+.color-gray {
+  color: #6e7377;
+}
+
+.color-grayDark {
+  color: #44484b;
+}
+
+.color-grayLight {
+  color: #c6cbce;
+}
+
+/* === background  === */
+.bg_base {
+  background-color: white;
+  color: #25303b;
+}
+.bg-ghost {
+  background-color: ghostwhite;
+  color: #25303b;
+}
+.bg-main {
+  background-color: #4292a7;
+}
+.bg-brand {
+  background-color: #ca413d;
+}
+.bg-accent {
+  background-color: #9b5ddd;
+}
+.bg-gray {
+  background-color: #6e7377;
+}
+.bg-grayLight {
+  background-color: #c6cbce;
+}
+.bg-grayDark {
+  background-color: #44484b;
+}
+.bg-black {
+  background-color: #25303b;
+}
+.bg-bgDark {
+  background-color: #1e2325;
+}
+
+/** include **/
+/* === text-color === */
+.color-white {
+  color: white;
+}
+
+.color-ghost {
+  color: ghostwhite;
+}
+
+.color-black {
+  color: #25303b;
+}
+
+.color-bgDark {
+  color: #1e2325;
+}
+
+.color-brand {
+  color: #ca413d;
+}
+
+.color-main {
+  color: #4292a7;
+}
+
+.color-accent {
+  color: #9b5ddd;
+}
+
+.color-gray {
+  color: #6e7377;
+}
+
+.color-grayDark {
+  color: #44484b;
+}
+
+.color-grayLight {
+  color: #c6cbce;
+}
+
+/* === background  === */
+.bg_base {
+  background-color: white;
+  color: #25303b;
+}
+.bg-ghost {
+  background-color: ghostwhite;
+  color: #25303b;
+}
+.bg-main {
+  background-color: #4292a7;
+}
+.bg-brand {
+  background-color: #ca413d;
+}
+.bg-accent {
+  background-color: #9b5ddd;
+}
+.bg-gray {
+  background-color: #6e7377;
+}
+.bg-grayLight {
+  background-color: #c6cbce;
+}
+.bg-grayDark {
+  background-color: #44484b;
+}
+.bg-black {
+  background-color: #25303b;
+}
+.bg-bgDark {
+  background-color: #1e2325;
+}
+
+/** Button default **/
+button {
+  border: none;
+}
+
+.btn {
+  padding: 0;
+  border-radius: calc(40px / 2);
+  color: #25303b;
+  background-color: #c6cbce;
+  transition: 0.3s;
+  outline: none;
+  /** Width Sizes **/
+  /** Width Sizes **/
+}
+.btn:hover {
+  opacity: 0.85;
+}
+.btn:focus, .btn:active {
+  outline: none;
+  background-color: skyblue;
+}
+.btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: auto;
+  padding: 0.25em 1.5em;
+  min-height: 40px;
+  font-size: 1.6rem;
+  color: #25303b;
+  background-color: #c6cbce;
+  border-radius: calc(40px / 2);
+  /** Button Sizes **/
+  /** Width Sizes **/
+  /** Colors **/
+}
+.btn a:focus, .btn a:active {
+  outline: none;
+  background-color: skyblue;
+}
+.btn a.btnSize-sm {
+  min-height: 32px;
+  padding: 0.5em 1.2em;
+  font-size: 1.2rem;
+}
+.btn a.min {
+  min-width: auto;
+}
+.btn a.normal {
+  min-width: 120px;
+}
+.btn a.middle {
+  min-width: 320px;
+}
+.btn a.large {
+  min-width: 480px;
+}
+.btn a.full {
+  min-width: 100%;
+}
+.btn a.success {
+  background-color: teal;
+  color: white;
+}
+.btn a.warning {
+  background-color: orange;
+  color: white;
+}
+.btn a.danger {
+  background-color: tomato;
+  color: white;
+}
+.btn.min {
+  min-width: auto;
+}
+.btn.normal {
+  min-width: 120px;
+}
+.btn.middle {
+  min-width: 320px;
+}
+.btn.large {
+  min-width: 480px;
+}
+.btn.full {
+  min-width: 100%;
+  /** Colors **/
+}
+.btn.success a {
+  background-color: teal;
+  color: white;
+}
+.btn.warning a {
+  background-color: orange;
+  color: white;
+}
+.btn.danger a {
+  background-color: tomato;
+  color: white;
+}
+.btn.min a {
+  min-width: auto;
+}
+.btn.normal a {
+  min-width: 120px;
+}
+.btn.middle a {
+  min-width: 320px;
+}
+.btn.large a {
+  min-width: 480px;
+}
+.btn.full a {
+  min-width: 100%;
+}

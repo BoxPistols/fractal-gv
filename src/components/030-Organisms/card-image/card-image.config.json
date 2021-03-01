@@ -1,6 +1,6 @@
 {
-  "title": "with image",
-  "name": "with image",
+  "title": "card with image",
+  "name": "card with image",
   "context": {
     "card_style": "card_style",
     "card_imageArea": "card_imageArea",

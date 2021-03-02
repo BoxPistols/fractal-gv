@@ -1,6 +1,7 @@
 // Reactパッケージの読み込み
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Card from './Card'
 import './index.sass'
 
 console.log('React')
@@ -43,6 +44,9 @@ class App extends React.Component {
 			<div className='w-100 fx fx-d-col fx-c'>
 				<h1 className='fz44'>Hello React!</h1>
 				<Button />
+                <Card />
+                <Card />
+                <Card />
 			</div>
 		)
 	}

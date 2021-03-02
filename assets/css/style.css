@@ -1038,7 +1038,7 @@ html {
 }
 
 body {
-  font-size: 10px;
+  font-size: 1.6rem;
   line-height: 1.5;
   font-family: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -1217,7 +1217,7 @@ button {
   border: none;
 }
 
-button.btn {
+.btn {
   padding: 0;
   border-radius: calc(40px / 2);
   color: #25303b;
@@ -1227,14 +1227,14 @@ button.btn {
   /** Width Sizes **/
   /** Width Sizes **/
 }
-button.btn:hover {
+.btn:hover {
   opacity: 0.85;
 }
-button.btn:focus, button.btn:active {
+.btn:focus, .btn:active {
   outline: none;
   background-color: skyblue;
 }
-button.btn a {
+.btn a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1249,83 +1249,83 @@ button.btn a {
   /** Width Sizes **/
   /** Colors **/
 }
-button.btn a:focus, button.btn a:active {
+.btn a:focus, .btn a:active {
   outline: none;
   background-color: skyblue;
 }
-button.btn a.btnSize-sm {
+.btn a.btnSize-sm {
   min-height: 32px;
   padding: 0.5em 1.2em;
   font-size: 1.2rem;
 }
-button.btn a.min {
+.btn a.min {
   min-width: auto;
 }
-button.btn a.normal {
+.btn a.normal {
   min-width: 120px;
 }
-button.btn a.middle {
+.btn a.middle {
   min-width: 320px;
 }
-button.btn a.large {
+.btn a.large {
   min-width: 480px;
 }
-button.btn a.full {
+.btn a.full {
   min-width: 100%;
 }
-button.btn a.success {
+.btn a.success {
   background-color: teal;
   color: white;
 }
-button.btn a.warning {
+.btn a.warning {
   background-color: orange;
   color: white;
 }
-button.btn a.danger {
+.btn a.danger {
   background-color: tomato;
   color: white;
 }
-button.btn.min {
+.btn.min {
   min-width: auto;
 }
-button.btn.normal {
+.btn.normal {
   min-width: 120px;
 }
-button.btn.middle {
+.btn.middle {
   min-width: 320px;
 }
-button.btn.large {
+.btn.large {
   min-width: 480px;
 }
-button.btn.full {
+.btn.full {
   min-width: 100%;
   /** Colors **/
 }
-button.btn.success a {
+.btn.success a {
   background-color: teal;
   color: white;
 }
-button.btn.warning a {
+.btn.warning a {
   background-color: orange;
   color: white;
 }
-button.btn.danger a {
+.btn.danger a {
   background-color: tomato;
   color: white;
 }
-button.btn.min a {
+.btn.min a {
   min-width: auto;
 }
-button.btn.normal a {
+.btn.normal a {
   min-width: 120px;
 }
-button.btn.middle a {
+.btn.middle a {
   min-width: 320px;
 }
-button.btn.large a {
+.btn.large a {
   min-width: 480px;
 }
-button.btn.full a {
+.btn.full a {
   min-width: 100%;
 }
 

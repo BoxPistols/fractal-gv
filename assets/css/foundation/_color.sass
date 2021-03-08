@@ -25,84 +25,26 @@ $colors: ('white': white, 'ghost': ghostwhite, 'black': #25303b, 'bgDark': #1e23
         color: $color
 
 /* === background  === */
-.base
-    &-bg
+.bg
+    &_base
         background-color: $white
         color: $black
-.ghost
-    &-bg
+    &-ghost
         background-color: $ghost
         color: $black
-.main
-    &-bg
+    &-main
         background-color: $main
-.brand
-    &-bg
+    &-brand
         background-color: $brand
-.accent
-    &-bg
+    &-accent
         background-color: $accent
-.gray
-    &-bg
+    &-gray
         background-color: $gray
-.grayLight
-    &-bg
+    &-grayLight
         background-color: $grayLight
-.grayDark
-    &-bg
+    &-grayDark
         background-color: $grayDark
-.black
-    &-bg
+    &-black
         background-color: $black
-.bgDark
-    &-bg
+    &-bgDark
         background-color: $bgDark
-
-// === color for preview  === //
-.color
-    &__org
-        // @include fx
-        display:  flex
-
-        flex-wrap: wrap
-    &__mol
-        display: flex
-        margin: 8px
-        &.info
-            flex-direction: column
-            justify-content: center
-            color: $gray
-    &__atm
-        width: 96px
-        height: 96px
-        // @include fx
-        // @include fx-d-col
-        // @include fx-c
-        text-align: center
-        font-size: 1.4rem
-        border: 1px solid $grayLight
-        border-radius: 8px
-        color: $white
-        &.brand
-            background-color: $brand
-        &.base
-            background-color: $white
-            color: $black
-        &.ghost, &.ghost-bg
-            background-color: $ghost
-            color: $black
-        &.main
-            background-color: $main
-        &.accent
-            background-color: $accent
-        &.gray
-            background-color: $gray
-        &.grayLight, &.grayLight-bg
-            background-color: $grayLight
-            color: $black
-        &.grayDark
-            background-color: $grayDark
-        &.black
-            background-color: $black
-        &.bgDark
-            background-color: $bgDark

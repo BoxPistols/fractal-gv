@@ -40,101 +40,36 @@
 }
 
 /* === background  === */
-.base-bg {
+.bg_base {
   background-color: white;
   color: #25303b;
 }
-
-.ghost-bg {
+.bg-ghost {
   background-color: ghostwhite;
   color: #25303b;
 }
-
-.main-bg {
+.bg-main {
   background-color: #4292a7;
 }
-
-.brand-bg {
+.bg-brand {
   background-color: #ca413d;
 }
-
-.accent-bg {
+.bg-accent {
   background-color: #9b5ddd;
 }
-
-.gray-bg {
+.bg-gray {
   background-color: #6e7377;
 }
-
-.grayLight-bg {
+.bg-grayLight {
   background-color: #c6cbce;
 }
-
-.grayDark-bg {
+.bg-grayDark {
   background-color: #44484b;
 }
-
-.black-bg {
+.bg-black {
   background-color: #25303b;
 }
-
-.bgDark-bg {
-  background-color: #1e2325;
-}
-
-/** color for preview  **/
-.color__org {
-  flex-wrap: wrap;
-}
-.color__mol {
-  display: flex;
-  margin: 8px;
-}
-.color__mol.info {
-  flex-direction: column;
-  justify-content: center;
-  color: #6e7377;
-}
-.color__atm {
-  width: 96px;
-  height: 96px;
-  text-align: center;
-  font-size: 1.4rem;
-  border: 1px solid #c6cbce;
-  border-radius: 8px;
-  color: white;
-}
-.color__atm.brand {
-  background-color: #ca413d;
-}
-.color__atm.base {
-  background-color: white;
-  color: #25303b;
-}
-.color__atm.ghost, .color__atm.ghost-bg {
-  background-color: ghostwhite;
-  color: #25303b;
-}
-.color__atm.main {
-  background-color: #4292a7;
-}
-.color__atm.accent {
-  background-color: #9b5ddd;
-}
-.color__atm.gray {
-  background-color: #6e7377;
-}
-.color__atm.grayLight, .color__atm.grayLight-bg {
-  background-color: #c6cbce;
-  color: #25303b;
-}
-.color__atm.grayDark {
-  background-color: #44484b;
-}
-.color__atm.black {
-  background-color: #25303b;
-}
-.color__atm.bgDark {
+.bg-bgDark {
   background-color: #1e2325;
 }
 
@@ -181,101 +116,36 @@
 }
 
 /* === background  === */
-.base-bg {
+.bg_base {
   background-color: white;
   color: #25303b;
 }
-
-.ghost-bg {
+.bg-ghost {
   background-color: ghostwhite;
   color: #25303b;
 }
-
-.main-bg {
+.bg-main {
   background-color: #4292a7;
 }
-
-.brand-bg {
+.bg-brand {
   background-color: #ca413d;
 }
-
-.accent-bg {
+.bg-accent {
   background-color: #9b5ddd;
 }
-
-.gray-bg {
+.bg-gray {
   background-color: #6e7377;
 }
-
-.grayLight-bg {
+.bg-grayLight {
   background-color: #c6cbce;
 }
-
-.grayDark-bg {
+.bg-grayDark {
   background-color: #44484b;
 }
-
-.black-bg {
+.bg-black {
   background-color: #25303b;
 }
-
-.bgDark-bg {
-  background-color: #1e2325;
-}
-
-/** color for preview  **/
-.color__org {
-  flex-wrap: wrap;
-}
-.color__mol {
-  display: flex;
-  margin: 8px;
-}
-.color__mol.info {
-  flex-direction: column;
-  justify-content: center;
-  color: #6e7377;
-}
-.color__atm {
-  width: 96px;
-  height: 96px;
-  text-align: center;
-  font-size: 1.4rem;
-  border: 1px solid #c6cbce;
-  border-radius: 8px;
-  color: white;
-}
-.color__atm.brand {
-  background-color: #ca413d;
-}
-.color__atm.base {
-  background-color: white;
-  color: #25303b;
-}
-.color__atm.ghost, .color__atm.ghost-bg {
-  background-color: ghostwhite;
-  color: #25303b;
-}
-.color__atm.main {
-  background-color: #4292a7;
-}
-.color__atm.accent {
-  background-color: #9b5ddd;
-}
-.color__atm.gray {
-  background-color: #6e7377;
-}
-.color__atm.grayLight, .color__atm.grayLight-bg {
-  background-color: #c6cbce;
-  color: #25303b;
-}
-.color__atm.grayDark {
-  background-color: #44484b;
-}
-.color__atm.black {
-  background-color: #25303b;
-}
-.color__atm.bgDark {
+.bg-bgDark {
   background-color: #1e2325;
 }
 

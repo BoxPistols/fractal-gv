@@ -401,112 +401,48 @@ mark {
   background-color: rgba(34, 136, 255, 0.3);
 }
 
-/** include **/
-/* -------- Block or None -------- */
-/** mixin  **/
-/** include **/
-.d-block {
-  display: block;
-}
-
-.d-none {
-  display: none;
-}
-
-.v-hidden {
-  visibility: hidden;
-}
-
-/* -------- flex -------- */
-/** mixin **/
-/** includes **/
-.fx {
-  display: flex;
-}
-
-.fx-d-col {
-  flex-direction: column;
-}
-
-.fx-c {
-  justify-content: center;
-  align-items: center;
-}
-
-.fx-jc-c {
-  justify-content: center;
-}
-
-.fx-ai-c {
-  align-items: center;
-}
-
-.fx-jc-e {
-  justify-content: flex-end;
-}
-
-.fx-ai-e {
-  align-items: flex-end;
-}
-
-.w-100 {
-  width: 100%;
-}
-
-.w-75 {
-  width: 75%;
-}
-
-.w-50 {
-  width: 50%;
-}
-
-.w-25 {
-  width: 25%;
-}
-
-/** Colors **/
-.color- + white {
+/* === text-color === */
+.color-white {
   color: white;
 }
 
-.color- + ghost {
+.color-ghost {
   color: ghostwhite;
 }
 
-.color- + black {
+.color-black {
   color: #25303b;
 }
 
-.color- + bgDark {
+.color-bgDark {
   color: #1e2325;
 }
 
-.color- + brand {
+.color-brand {
   color: #ca413d;
 }
 
-.color- + main {
+.color-main {
   color: #4292a7;
 }
 
-.color- + accent {
+.color-accent {
   color: #9b5ddd;
 }
 
-.color- + gray {
+.color-gray {
   color: #6e7377;
 }
 
-.color- + grayDark {
+.color-grayDark {
   color: #44484b;
 }
 
-.color- + grayLight {
+.color-grayLight {
   color: #c6cbce;
 }
 
-/* background */
+/* === background  === */
 .base-bg {
   background-color: white;
   color: #25303b;
@@ -549,7 +485,6 @@ mark {
   background-color: #1e2325;
 }
 
-/** color for preview  **/
 .color__org {
   display: flex;
   flex-wrap: wrap;
@@ -566,10 +501,6 @@ mark {
 .color__atm {
   width: 96px;
   height: 96px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
   font-size: 1.4rem;
   border: 1px solid #c6cbce;

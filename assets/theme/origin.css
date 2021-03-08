@@ -466,6 +466,46 @@ mark {
 }
 
 /** Colors **/
+.color- + white {
+  color: white;
+}
+
+.color- + ghost {
+  color: ghostwhite;
+}
+
+.color- + black {
+  color: #25303b;
+}
+
+.color- + bgDark {
+  color: #1e2325;
+}
+
+.color- + brand {
+  color: #ca413d;
+}
+
+.color- + main {
+  color: #4292a7;
+}
+
+.color- + accent {
+  color: #9b5ddd;
+}
+
+.color- + gray {
+  color: #6e7377;
+}
+
+.color- + grayDark {
+  color: #44484b;
+}
+
+.color- + grayLight {
+  color: #c6cbce;
+}
+
 /* background */
 .base-bg {
   background-color: white;

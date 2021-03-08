@@ -2,7 +2,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Card from './Card'
-import './index.sass'
+import './index.scss'
 
 console.log('React')
 

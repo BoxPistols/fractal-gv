@@ -1,5 +1,6 @@
 /** include **/
 @import ../../foundation/color
+@import ../../variables/variable-block
 
 /** Button default **/
 button
@@ -23,7 +24,8 @@ button
         // @include fx
         // @include fx-c
         //  FIXME!
-        display: flex
+        @include flex(center, center)
+        // display: flex
 
         width: auto
         padding: .25em 1.5em

@@ -1,0 +1,75 @@
+@mixin flex($justify: start, $align: start, $column: row, $wrap: wrap) {
+  display: flex;
+
+  // justify-content水平方向揃え（第一引数） ===
+  @if $justify == start {
+    // 左揃え |||--- default
+    justify-content: flex-start;
+  } @else if $justify == end {
+    // 右揃え ---|||
+    justify-content: flex-end;
+  } @else if $justify == center {
+    // 中央揃え -|||-
+    justify-content: center;
+  } @else if $justify == between {
+    // 両端配置 |-|-|
+    justify-content: space-between;
+  } @else if $justify == around {
+    // 均等配置 -|-|-|-
+    justify-content: space-around;
+  }
+
+  // align-items垂直方向揃え（第二引数）
+  @if $align == start {
+    // 上揃え ⁻⁻⁻ default
+    align-items: flex-start;
+  } @else if $align == end {
+    // 下揃え ___
+    align-items: flex-end;
+  } @else if $align == center {
+    // 中央揃え ---
+    align-items: center;
+  } @else if $align == baseline {
+    // ベースライン -=-
+    align-items: baseline;
+  } @else if $align == stretch {
+    // 高さ揃え |||
+    align-items: stretch;
+  }
+
+  // 縦並び（第三引数）
+  @if $column == row {
+    flex-direction: row; // 横並び default
+  } @else if $column == stretch {
+    // 縦並び
+    flex-direction: column;
+  }
+
+  // flex-wrap子要素の折り返し設定（第四引数）
+  @if $wrap == wrap {
+    // 折り返ししない
+    flex-wrap: wrap;
+  } @else if $wrap == nowrap {
+    // 上から下
+    flex-wrap: nowrap;
+  } @else if $wrap == reverse {
+    // 下から上
+    flex-wrap: wrap-reverse;
+  }
+}
+
+// Test
+// .box {
+//   background-color: gray;
+//   height: 30vh;
+
+//   @include flex(around, center);
+//   // overflow: scroll;
+//   .mod {
+//     display: block;
+//     // height: 32px;
+//     margin: 4px;
+//     padding: 12px 24px;
+//     background-color: skyblue;
+//   }
+// }

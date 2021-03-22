@@ -6,28 +6,27 @@
 /* === space for fractal preview  === */
 .fra--space
     &_org
-        @include fx
-        @include fx-c
+        // @include fx-c
+        // @include fx-d-col
+        display: inline-flex
         flex-wrap: wrap
     &_mol
         margin: 8px
-        padding: 0
-        line-height: 1
+        // padding: 0
         // &.info
         //     flex-direction: column
         //     justify-content: center
         //     color: $gray
         //     padding: 0
-        @include fx
-        @include fx-d-col
-        @include fx-c
+        // @include fx
+        // @include fx-c
+        > p
+          font-size: 14px
+          line-height: 1.5
     &_atm
         display: flex
-        min-width: 20px
-        // padding: 0
+        min-width: 16px
         text-align: center
         font-size: 0
-        // border-radius: 2px
-        // color: $white
+        line-height: 1.5
         background:  gray
-        line-height: 0

@@ -1,23 +1,29 @@
-/***
-    === size-name ===
-    xxs : 4px
-    xs : 8px
-    sm : 12px
-    md : 16px
-    lg : 20px
-    xl : 24px
-    xxl : 32px
-    xxxl : 40px
-    xxxxl : 48px
-    ***/
+// === global size name map === //
+$half : 4px
+$base : 8px
+$sm : 12px
+$md : 16px
+$ml : 20px
+$lg : 24px
+$xl : 32px
+$xxl : 40px
+$xxxl : 48px
 
+// not use
 // $spaces: (4: 4px, 8: 8px, 12: 12px, 16: 16px, 20: 20px, 24: 24px, 28: 28px, 32: 32px, 36: 36px, 40: 40px, 44: 44px, 48: 48px)
+
+
+@mixin margin($size)
+    margin: #{$size}
+
+@mixin padding($size)
+    padding: #{$size}
 
 // =====  Mapping Spaces Use Name =====
 .mg--auto
     margin: auto
 
-$spaces: ( 0: 0px, xxs : 4px, xs : 8px, sm : 12px, md : 16px, lg : 20px, xl : 24px, xxl : 32px, xxxl : 40px, xxxxl : 48px )
+$spaces: ( 0: 0, half : $half , base : $base, sm : $sm, md : $md, ml : $ml, lg : $lg, xl : $xl, xxl : $xxl, xxxl : $xxxl )
 
 @each $modifier, $space in $spaces
     // margin

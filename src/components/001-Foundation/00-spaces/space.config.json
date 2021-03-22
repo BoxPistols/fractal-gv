@@ -1,36 +1,41 @@
 {
-    "title": "space",
-    "status": "wip",
-    "context": {
-        "className": "base",
-        "display": ""
-    },
-    "variants": [
-        {
-            "name": "mix",
-            "context": {
-                "display": "none",
-                "spaces": [
-                    {
-                        "class": "xxs"
-                    },
-                    {
-                        "class": "xs"
-                    },
-                    {
-                        "class": "sm"
-                    },
-                    {
-                        "class": "md"
-                    },
-                    {
-                        "class": "lg"
-                    },
-                    {
-                        "class": "xl"
-                    }
-                ]
-            }
-        }
-    ]
+  "title": "space",
+  "status": "wip",
+  "variants": [
+    {
+      "name": "mix",
+      "context": {
+        "display": "none",
+        "spaces": [
+          {
+            "class": "half"
+          },
+          {
+            "class": "base"
+          },
+          {
+            "class": "sm"
+          },
+          {
+            "class": "md"
+          },
+          {
+            "class": "ml"
+          },
+          {
+            "class": "lg"
+          },
+          {
+            "class": "xl"
+          },
+          {
+            "class": "xxl"
+          },
+          {
+            "class": "xxxl"
+          }
+        ]
+      }
+    }
+  ]
 }

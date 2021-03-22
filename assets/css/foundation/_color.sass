@@ -17,14 +17,14 @@ $grayLight: #c6cbce
 //   --shakespeareColor:  #53a6c7
 //   --hopbushColor: #cf5da0
 
-/* === text-color === */
+// === text-color === //
 $colors: ('white': white, 'ghost': ghostwhite, 'black': #25303b, 'bgDark': #1e2325, 'brand': #ca413d, 'main': #4292a7,'accent': #9b5ddd,'gray': #6e7377,'grayDark': #44484b,'grayLight': #c6cbce)
 // @each key, value in $mapk
 @each $name, $color in $colors
     .color-#{$name}
         color: $color
 
-/* === background  === */
+// === background  === //
 .bg
     &_base
         background-color: $white
@@ -48,3 +48,13 @@ $colors: ('white': white, 'ghost': ghostwhite, 'black': #25303b, 'bgDark': #1e23
         background-color: $black
     &-bgDark
         background-color: $bgDark
+
+// === Gray Variable === //
+$grays: (gray50: #fafafa, gray100: #f5f5f5, gray200: #eeeeee, gray300: #e0e0e0, gray400: #bdbdbd, gray500: #9e9e9e, gray600: #757575, gray700: #616161, gray800: #424242, gray900: #212121)
+
+@each $modifier, $gray in $grays
+    .bg--#{$modifier}
+        background-color: $gray
+
+    .text--#{$modifier}
+        color: $gray

@@ -1,12 +1,10 @@
-# space
-
-   === size-name ===
-    xxs : 4px
-    xs : 8px
-    sm : 12px
-    md : 16px
-    lg : 20px
-    xl : 24px
-    xxl : 32px
-    xxxl : 40px
-    xxxxl : 48px
+# global size name map
+- $half : 4px
+- $base : 8px
+- $sm : 12px
+- $md : 16px
+- $ml : 20px
+- $lg : 24px
+- $xl : 32px
+- $xxl : 40px
+- $xxxl : 48px

@@ -1,26 +1,24 @@
-/*
- * Break Point
- *  min-width
- *     sm: 480px
- *     md: 768px
- *     lg: 1024px
- *     xl: 1440px
- * min-width = max-width + 1px
- */
+// ===== Break Point ===== //
+// min-width
+// sm: 480px
+// md: 768px
+// lg: 1024px
+// xl: 1440px
+// min-width = max-width + 1px
 
 $break-max: ("sm": "screen and (max-width: 480px)", "md": "screen and (max-width: 768px)", "lg": "screen and (max-width: 1024px)", "xl": "screen and (max-width: 1440px)") !default
 
 $break-min: ("sm": "screen and (min-width: 481px)", "md": "screen and (min-width: 769px)", "lg": "screen and (min-width: 1025px)", "xl": "screen and (min-width: 1441px)") !default
 
 @mixin mqMax($breakpoint: md)
-  @media #{map-get($break-max, $breakpoint)}
-    @content
+    @media #{map-get($break-max, $breakpoint)}
+        @content
 
 @mixin mqMin($breakpoint: md)
-  @media #{map-get($break-min, $breakpoint)}
-    @content
+    @media #{map-get($break-min, $breakpoint)}
+        @content
 
-/** Example **/
+//  Example
 // .foo
   // @include mqMax(sm)
     // color: orange

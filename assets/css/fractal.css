@@ -199,4 +199,29 @@
   background-color: #1e2325;
 }
 
+/* === space for fractal preview  === */
+.fra--space_org {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fra--space_mol {
+  margin: 8px;
+  padding: 0;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.fra--space_atm {
+  display: flex;
+  min-width: 20px;
+  text-align: center;
+  font-size: 0;
+  background: gray;
+  line-height: 0;
+}
+
 /*# sourceMappingURL=fractal.css.map */

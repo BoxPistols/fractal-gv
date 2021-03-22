@@ -1,0 +1,33 @@
+// === style.cssからは分岐した、Fractal View専用のファイル === //
+
+// === 本体コンポネント === //
+// @import ../../css/utility/space
+
+/* === space for fractal preview  === */
+.fra--space
+    &_org
+        @include fx
+        @include fx-c
+        flex-wrap: wrap
+    &_mol
+        margin: 8px
+        padding: 0
+        line-height: 1
+        // &.info
+        //     flex-direction: column
+        //     justify-content: center
+        //     color: $gray
+        //     padding: 0
+        @include fx
+        @include fx-d-col
+        @include fx-c
+    &_atm
+        display: flex
+        min-width: 20px
+        // padding: 0
+        text-align: center
+        font-size: 0
+        // border-radius: 2px
+        // color: $white
+        background:  gray
+        line-height: 0

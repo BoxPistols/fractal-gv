@@ -1,0 +1,36 @@
+{
+    "title": "space",
+    "status": "wip",
+    "context": {
+        "className": "base",
+        "display": ""
+    },
+    "variants": [
+        {
+            "name": "mix",
+            "context": {
+                "display": "none",
+                "spaces": [
+                    {
+                        "class": "xxs"
+                    },
+                    {
+                        "class": "xs"
+                    },
+                    {
+                        "class": "sm"
+                    },
+                    {
+                        "class": "md"
+                    },
+                    {
+                        "class": "lg"
+                    },
+                    {
+                        "class": "xl"
+                    }
+                ]
+            }
+        }
+    ]
+}

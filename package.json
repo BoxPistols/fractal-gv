@@ -16,7 +16,7 @@
 		"build": "fractal build",
 		"react-build": "npm-run-all -p build:*",
 		"build:jsx-clean": "rm -rf react/*",
-		"build:react-build": "parcel build src/index.html --dist-dir react"
+		"build:react-build": "parcel build ReactApp/index.html --dist-dir react"
 
 	},
 	"dependencies": {

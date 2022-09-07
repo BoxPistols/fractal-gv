@@ -312,7 +312,7 @@ button {
 
 .btn {
   padding: 0;
-  border-radius: calc(40px / 2);
+  border-radius: 20px;
   color: #25303b;
   background-color: #c6cbce;
   transition: 0.3s;
@@ -339,7 +339,7 @@ button {
   font-size: 1.6rem;
   color: #25303b;
   background-color: #c6cbce;
-  border-radius: calc(40px / 2);
+  border-radius: 20px;
   /** Button Sizes **/
   /** Width Sizes **/
   /** Colors **/

@@ -694,7 +694,7 @@ mark {
 
 .Search-input {
   width: 100%;
-  padding: 0.3125rem 2rem 0.3125rem calc(.5625rem * 2);
+  padding: 0.3125rem 2rem 0.3125rem 1.125rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -885,7 +885,7 @@ mark {
   transition: 0.3s;
 }
 .Tree-collectionLabel:hover {
-  background-color: #c5a8beb2;
+  background-color: rgba(197, 168, 190, 0.6980392157);
   border: 1px solid pink;
 }
 .Tree-collectionLabel:focus {
@@ -1024,7 +1024,7 @@ mark {
   padding-inline-start: 2rem;
 }
 .Tree-depth-3 .Tree-collectionLabel:hover {
-  background-color: #292d3183;
+  background-color: rgba(41, 45, 49, 0.5137254902);
 }
 
 [dir=ltr] .Tree-depth-3 .Tree-collectionLabel {
@@ -1055,7 +1055,7 @@ mark {
   transition: 0.3s;
 }
 .Tree-depth-3 .Tree-entityLink:hover {
-  background-color: #867a8365;
+  background-color: rgba(134, 122, 131, 0.3960784314);
   border: 1px solid pink;
 }
 
@@ -2509,11 +2509,9 @@ mark {
     -webkit-transition: none;
     transition: none;
   }
-
   [dir=ltr] .Frame-body {
     margin-right: 240px;
   }
-
   [dir=rtl] .Frame-body {
     margin-left: 240px;
   }
@@ -2660,26 +2658,21 @@ mark {
     -webkit-padding-start: 10rem;
     padding-inline-start: 10rem;
   }
-
   [dir=ltr] .Frame.is-closed .Meta-item {
     padding-left: 10rem;
   }
-
   [dir=rtl] .Frame.is-closed .Meta-item {
     padding-right: 10rem;
   }
-
   .Frame.is-closed .Meta-key {
     -webkit-margin-start: -10rem;
     margin-inline-start: -10rem;
     width: 10rem;
     float: left;
   }
-
   [dir=ltr] .Frame.is-closed .Meta-key {
     margin-left: -10rem;
   }
-
   [dir=rtl] .Frame.is-closed .Meta-key {
     margin-right: -10rem;
   }
@@ -2689,26 +2682,21 @@ mark {
     -webkit-padding-start: 10rem;
     padding-inline-start: 10rem;
   }
-
   [dir=ltr] .Frame:not(.is-closed) .Meta-item {
     padding-left: 10rem;
   }
-
   [dir=rtl] .Frame:not(.is-closed) .Meta-item {
     padding-right: 10rem;
   }
-
   .Frame:not(.is-closed) .Meta-key {
     -webkit-margin-start: -10rem;
     margin-inline-start: -10rem;
     width: 10rem;
     float: left;
   }
-
   [dir=ltr] .Frame:not(.is-closed) .Meta-key {
     margin-left: -10rem;
   }
-
   [dir=rtl] .Frame:not(.is-closed) .Meta-key {
     margin-right: -10rem;
   }
@@ -2755,9 +2743,9 @@ mark {
   bottom: 0;
   height: 100%;
   width: 100%;
-  width: calc(100% + .625rem);
+  width: calc(100% + 0.625rem);
   min-width: 200px;
-  max-width: calc(100% + .625rem);
+  max-width: calc(100% + 0.625rem);
   background-color: transparent;
 }
 
@@ -2777,7 +2765,7 @@ mark {
   width: 100%;
   height: 100%;
   overflow: auto;
-  max-width: calc(100% - .625rem + 1px);
+  max-width: calc(100% - 0.625rem + 1px);
   min-width: 180px;
   background-color: #fff;
   -webkit-overflow-scrolling: touch;

@@ -1838,49 +1838,56 @@ img {
 
 /** Font-Sizes **/
 .fz8 {
-  font-size: 0.8rem;
+  font-size: 10/10rem;
 }
 
 .fz12 {
-  font-size: 1.2rem;
+  font-size: 10/10rem;
 }
 
 .fz16 {
-  font-size: 1.6rem;
+  font-size: 10/10rem;
 }
 
 .fz20 {
-  font-size: 2rem;
+  font-size: 10/10rem;
 }
 
 .fz24 {
-  font-size: 2.4rem;
+  font-size: 10/10rem;
 }
 
 .fz28 {
-  font-size: 2.8rem;
+  font-size: 10/10rem;
 }
 
 .fz32 {
-  font-size: 3.2rem;
+  font-size: 10/10rem;
 }
 
 .fz36 {
-  font-size: 3.6rem;
+  font-size: 10/10rem;
 }
 
 .fz40 {
-  font-size: 4rem;
+  font-size: 10/10rem;
 }
 
 .fz44 {
-  font-size: 4.4rem;
+  font-size: 10/10rem;
 }
 
 .fz48 {
-  font-size: 4.8rem;
+  font-size: 10/10rem;
 }
 
+/*
+Deprecation Warning: Using / for division outside of calc() is deprecated and will be removed in Dart Sass 2.0.0.
+Recommendation:
+math.div($endPoint - $startPoint, $multiplePx)
+or
+calc(($endPoint - $startPoint) / $multiplePx)
+*/
 .head {
   line-height: 1.5;
   font-weight: 500;
@@ -1888,23 +1895,23 @@ img {
 }
 .head_1 {
   font-size: 3.2rem;
-  font-size: clamp(30px, calc(1vw * 32 / 12), 34px);
+  font-size: clamp(30px, 2.6666666667vw, 34px);
 }
 .head_2 {
   font-size: 2.8rem;
-  font-size: clamp(26px, calc(1vw * 28 / 12), 30px);
+  font-size: clamp(26px, 2.3333333333vw, 30px);
 }
 .head_3 {
   font-size: 2.4rem;
-  font-size: clamp(22px, calc(1vw * 24 / 12), 26px);
+  font-size: clamp(22px, 2vw, 26px);
 }
 .head_4 {
   font-size: 2rem;
-  font-size: clamp(18px, calc(1vw * 20 / 12), 22px);
+  font-size: clamp(18px, 1.6666666667vw, 22px);
 }
 .head_5 {
   font-size: 2rem;
-  font-size: clamp(16px, calc(1vw * 17 / 12), 18px);
+  font-size: clamp(16px, 1.4166666667vw, 18px);
 }
 
 /** Responsi    ve font Size **/
@@ -1921,42 +1928,42 @@ img {
 /** IE対応： フォールバックの設置 = 中間サイズ rem **/
 .tx-xxs {
   font-size: 1.3rem;
-  font-size: clamp(12px, calc(1vw * 12 / 10), 14px);
+  font-size: clamp(12px, 1.2vw, 14px);
 }
 
 .tx-xs {
   font-size: 1.5rem;
-  font-size: clamp(14px, calc(1vw * 14 / 10), 16px);
+  font-size: clamp(14px, 1.4vw, 16px);
 }
 
 .tx-sm {
   font-size: 1.7rem;
-  font-size: clamp(16px, calc(1vw * 16 / 10), 18px);
+  font-size: clamp(16px, 1.6vw, 18px);
 }
 
 .tx-md {
   font-size: 2rem;
-  font-size: clamp(18px, calc(1vw * 18 / 10), 22px);
+  font-size: clamp(18px, 1.8vw, 22px);
 }
 
 .tx-lg {
   font-size: 2.4rem;
-  font-size: clamp(22px, calc(1vw * 22 / 10), 26px);
+  font-size: clamp(22px, 2.2vw, 26px);
 }
 
 .tx-xl {
   font-size: 2.8rem;
-  font-size: clamp(26px, calc(1vw * 26 / 10), 30px);
+  font-size: clamp(26px, 2.6vw, 30px);
 }
 
 .tx-xxl {
   font-size: 3.2rem;
-  font-size: clamp(30px, calc(1vw * 30 / 10), 34px);
+  font-size: clamp(30px, 3vw, 34px);
 }
 
 .tx-xxxl {
   font-size: 3.6rem;
-  font-size: clamp(34px, calc(1vw * 34 / 10), 38px);
+  font-size: clamp(34px, 3.4vw, 38px);
 }
 
 #toggleMode_area {
@@ -2194,7 +2201,7 @@ button {
 
 .btn {
   padding: 0;
-  border-radius: calc(40px / 2);
+  border-radius: 20px;
   color: #25303b;
   background-color: #c6cbce;
   transition: 0.3s;
@@ -2221,7 +2228,7 @@ button {
   font-size: 1.6rem;
   color: #25303b;
   background-color: #c6cbce;
-  border-radius: calc(40px / 2);
+  border-radius: 20px;
   /** Button Sizes **/
   /** Width Sizes **/
   /** Colors **/

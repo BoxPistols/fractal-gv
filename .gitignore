@@ -73,10 +73,12 @@ yarn-debug.log*
 
 # cache
 .cache/
+.parcel-cache
 
 # Deploy
 docs/
 react/
+dist/
 
 # Editor
 .vscode/

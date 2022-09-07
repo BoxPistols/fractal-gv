@@ -4,11 +4,10 @@
 	"description": "create origin theme",
 	"author": "asagiri design",
 	"license": "ISC",
-	"main": "index.js",
 	"scripts": {
 		"dev": "npm-run-all -p start:*",
-		"start:fractal": "fractal start --sync",
-		"start:parcel": "parcel ./jsx/index.html -p 4649 -d react",
+		"start:fractal": "fractal start --sync -p 3333",
+		"start:parcel": "parcel ReactApp/index.html -p 4649",
 		"css": "npm-run-all -p css:*",
 		"css:assets": "sass --watch assets/css/. assets/theme/.",
 		"css:components": "sass --watch --no-source-map src/components/",
@@ -17,26 +16,26 @@
 		"build": "fractal build",
 		"react-build": "npm-run-all -p build:*",
 		"build:jsx-clean": "rm -rf react/*",
-		"build:react-build": "parcel build ./jsx/index.html -d react"
+		"build:react-build": "parcel build src/index.html --dist-dir react"
+
 	},
 	"dependencies": {
 		"@frctl/fractal": "^1.5.2",
 		"@frctl/mandelbrot": "^1.7.0",
 		"faker": "^5.2.0",
 		"loadash": "^1.0.0",
-		"parcel": "^2.0.0-nightly.619",
 		"postcss-loader": "^5.1.0",
-		"react": "^16.14.0",
-		"react-dom": "^16.14.0"
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
 	},
 	"devDependencies": {
-		"@types/react": "^16.14.2",
-		"@types/react-dom": "^16.9.10",
+		"@parcel/transformer-sass": "2.7.0",
 		"autoprefixer": "^10.2.5",
 		"npm-run-all": "^4.1.5",
-		"parcel-bundler": "^1.12.4",
+		"parcel": "^2.7.0",
 		"postcss": "^8.2.7",
 		"prettier": "^2.2.1",
+		"process": "^0.11.10",
 		"sass": "^1.54.8",
 		"typescript": "^4.1.3"
 	},
